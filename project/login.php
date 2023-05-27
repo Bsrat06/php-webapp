@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 $server= "localhost";
 $dbusername= "root";
 $dbpassword= "";
@@ -36,7 +37,8 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
         }
 
         if (mysqli_num_rows($result)){
-            echo "HELLO ";
+            $_SESSION["user"]= $email;
+            echo $_SESSION["user"];
         }
         if(mysqli_num_rows($result)==0){
             $errorMessage= "Invalid credentials!";
@@ -103,6 +105,8 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
                         if (!empty($successMessage)){
                             echo "<strong>$successMessage</strong>";
                         }
+
+
                         ?>
                     </div>
                     <p class="signin"><button class= "btn-signin" type="submit">Sign In</button></p>
