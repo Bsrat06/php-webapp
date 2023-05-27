@@ -68,10 +68,22 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOG IN</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img class= "login-image" src= "images/books_3-wallpaper-2400x1350.jpg">
+    <img class= "login-image" src= "images/2021-11-27-11-08-30.jpg">
     <div class="container">
+        <div class="nav-bar">
+            <ul>
+                <div id="nav-home"><li><a href="home.php">HOME</a></li></div>
+                <div id="nav-about"><li><a href="http://localhost/astuDigitalResource/project/getresources.php">GET RESOURCES</a></li></div>
+                <div id="nav-login"><li><a href="http://localhost/astuDigitalResource/project/login.php">LOG IN</a></li></div>
+                <div id="nav-signup"><li><a href="http://localhost/astuDigitalResource/project/signup.php">SIGN UP</a></li></div>
+                <div id="nav-blog"><li><a href="#">BLOG</a></li></div>
+            </ul>
+        </div>
         <div class="container2">
             <h1 class="title">LOG IN</h1>
             <div class= "errorMessage">
@@ -94,6 +106,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
                         ?>
                     </div>
                     <p class="signin"><button class= "btn-signin" type="submit">Sign In</button></p>
+                    <p class="or">or</p>
                 </form>
             </span>
         </div>

@@ -11,14 +11,13 @@ include_once 'db_connectivity.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstuDigitalResource</title>
-    <link rel="stylesheet" href= "home.css">
+    <link rel="stylesheet" href= "getresources.css">
     
 </head>
 <body>
     <div class="container">
         <h1 class="title">Available Resources</h1>
 <body>
-
     <div class="nav-bar">
         <ul>
             <div id="nav-home"><li><a href="home.php">HOME</a></li></div>
@@ -28,11 +27,9 @@ include_once 'db_connectivity.php';
             <div id="nav-blog"><li><a href="#">BLOG</a></li></div>
         </ul>
     </div>
-
+    
     <div class="booksList">
             <?php
-            
-            echo "<h3>Books</h3>";
 
             //fetch books info from the database
             $sql= "SELECT * FROM books";
@@ -41,8 +38,10 @@ include_once 'db_connectivity.php';
 
 
             if ($resultCheck > 0){
-                
+                echo "<h1>Books</h1>";
+                //echo "<h1>Select course</h1>";
                 while($row= mysqli_fetch_assoc($result)) {
+                    echo "<h3>Course Name: {$row['course_name']}</h3>". "<br>";
                     echo $row['title']. "<br>";
                     echo $row['author']. "<br>";
                     echo $row['isbn']. "<br>";
@@ -53,12 +52,14 @@ include_once 'db_connectivity.php';
             }
 
             ?>
-            </div>
+        </div>
             <div class="coursesList">
-                <?php
-                        
-            echo "<h3>Courses</h3>";
+            </div>
 
+            
+            <?php
+
+/*
             //fetch courses info from the database
             $sql= "SELECT * FROM courses";
             $result= mysqli_query($connection, $sql);
@@ -72,6 +73,7 @@ include_once 'db_connectivity.php';
                     echo $row['coursecode']. "<br><br>";
                 }
             }
+            */
                 ?>
             </div>
     </body>

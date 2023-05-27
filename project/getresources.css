@@ -1,26 +1,17 @@
-.container{
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    background-color: #2b2b2b;
-    width: 620px;
-    height: 100%;
+
+body{
+    background-color: #ffffff;
 }
-.container2{
-    position: relative;
-    top: 15%;
-    left: 30%;
-    width: 200px;
-    height: 200px;
-}
+
+
 .nav-bar{
-    position: absolute;
-    top: 0px;
-    left: 0px;
     border: 1px rgb(255, 255, 255) solid;
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     box-shadow: 0px 0px 5px;
     position: fixed;
     z-index: 2;
@@ -117,82 +108,5 @@
 #nav-blog a:hover{
     /*background-color: rgb(202, 202, 202);*/
     color: rgba(0, 75, 75, 0.616);
-}
-.login-image{
-    position: absolute;
-    top: 0%;
-    left: -10%;
-    width: 100%;
-    height: 100%;
-    opacity: 95%;
-    filter: brightness(80%);
-}
-.title{
-    text-align: center;
-    margin-bottom: 60px;
-    color: rgb(136, 226, 0);
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 3px;
-    font-size: larger;
-}
-
-input{
-    background: none;
-    width: 250px;
-    height: 25px;
-    border-width: 1px;
-    padding-left: 10px;
-    margin: 5px 0px 20px 0px;
-    border: 1px solid rgb(136, 226, 0);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-input:hover{
-    border-color: rgb(136, 226, 0);
-    transition: 0.2s;
-}
-
-
-.forms p{
-    color: rgba(136, 226, 0, 0.493);
-    font-size: 14px;
-    padding-bottom: 10px;
-}
-.btn-signin{
-    position: relative;
-    left: 40%;
-    background-color: rgb(112, 112, 112);
-    border: none;
-    width: 115px;
-    height: 30px;
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    border-radius: 20px;
-}
-.forgot{
-    position: relative;
-    left: 100%;
-    top: -30px;
-    color: blue;
-}
-a{
-    text-decoration: none;
-}
-.forgot:hover{
-    color: blue;
-    text-decoration: dashed;
-}
-.btn-signin:hover{
-    background-color: rgb(255, 176, 57);
-    transition: 0.2s;
-}
-.errorMessage{
-    color: red;
-    margin-bottom: 25px;
-}
-.successMessage{
-    color: green;
 }
 

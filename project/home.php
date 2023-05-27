@@ -13,11 +13,16 @@ include_once 'db_connectivity.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstuDigitalResource</title>
     <link rel="stylesheet" href= "home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     
 </head>
 <body>
+    <img class="home-image" src= "images/2021-11-27-12-08-51.jpg">
     <div class="container">
-        <h1 class="title">ASTU Digital Resource</h1>
+        <h1 class="title">ASTU</h1>
+        <h1 class="title2">Digital Resources</h1>
 
         <div class="nav-bar">
             <ul>
@@ -30,8 +35,10 @@ include_once 'db_connectivity.php';
         </div>
 
         <div class="bio">
+            <p class="about"><strong>ABOUT US</strong></p>
             <p>This website is designed to help students, teachers, staff members, and anyone who is struggling to find information that is provided by the Adama Science and Technology University.</p>
-            <p>In this website, there are various resources to be accessed remotely, all provided by the university.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores repudiandae ratione ipsum provident veritatis voluptas autem ad earum corporis possimus. Impedit laboriosam aut iusto non esse porro facilis? Quisquam, assumenda.</p>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur odio qui unde ipsum accusantium accusamus voluptas vel sint. Eaque modi laborum dolorum cum maiores voluptas adipisci iure nesciunt molestias fuga.</p>
         </div>
 
     </div>
