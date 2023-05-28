@@ -69,20 +69,20 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOG IN</title>
-    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../../static/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img class= "login-image" src= "../images/photo_2023-05-28_11-31-55.jpg">
+    <img class= "login-image" src= "../../images/photo_2023-05-28_11-31-55.jpg">
     <div class="container">
         <div class="nav-bar">
             <ul>
-                <div id="nav-home"><li><a href="home.php">HOME</a></li></div>
-                <div id="nav-getresources"><li><a href="http://localhost/astuDigitalResource/project/getresources.php">GET RESOURCES</a></li></div>
-                <div id="nav-login"><li><a href="http://localhost/astuDigitalResource/project/login.php">LOG IN</a></li></div>
-                <div id="nav-signup"><li><a href="http://localhost/astuDigitalResource/project/signup.php">SIGN UP</a></li></div>
+                <div id="nav-home"><li><a href="../home.php">HOME</a></li></div>
+                <div id="nav-getresources"><li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">GET RESOURCES</a></li></div>
+                <div id="nav-login"><li><a href="http://localhost/astuDigitalResource/project/templates/accounts/login.php">LOG IN</a></li></div>
+                <div id="nav-signup"><li><a href="http://localhost/astuDigitalResource/project/templates/accounts/signup.php">SIGN UP</a></li></div>
                 <div id="nav-blog"><li><a href="#">BLOG</a></li></div>
             </ul>
         </div>
@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
                 ?>
             </div>
             <span class="forms">
-                <form action="http://localhost/astuDigitalResource/project/login.php" method="POST">
+                <form action="http://localhost/astuDigitalResource/project/templates/accounts/login.php" method="POST">
                     <p class="email">Email<input type="email" name="email" required></p>
                     <p class="password">Password<input type="password" name="password" required></p>
                     <a class="forgot" href="#"><p>forgot password?</p></a>

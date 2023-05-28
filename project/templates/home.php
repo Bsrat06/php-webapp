@@ -34,14 +34,14 @@ require_once "auth_check.php";
                     <li><a href="">HOME</a></li>
                 </div>
                 <div id="nav-getresources">
-                    <li><a href="http://localhost/astuDigitalResource/project/getresources.php">GET RESOURCES</a></li>
+                    <li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">GET RESOURCES</a></li>
                 </div>
                 <?php
                 if (!isset($_SESSION)) {
-                    echo "<div id=nav-login><li><a href='http://localhost/astuDigitalResource/project/login.php'>LOG IN</a></li></div>";
-                    echo "<div id='nav-signup'><li><a href='http://localhost/astuDigitalResource/project/signup.php'>SIGN UP</a></li></div>";
+                    echo "<div id=nav-login><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/login.php'>LOG IN</a></li></div>";
+                    echo "<div id='nav-signup'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/signup.php'>SIGN UP</a></li></div>";
                 } else {
-                    echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/logout.php'>LOG OUT</a></li></div>";
+                    echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
                 }
                 ?>
                 <div id="nav-blog">

@@ -34,7 +34,7 @@
         <p class="astu">ASTU DIGITAL RESOURCES</p>
         <p class="motto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde temporibus nemo mollitia
             explicabo corporis molestias ab illo ducimus sequi.</p>
-        <a class="login" href="login.php"><strong>LOG IN</strong></a>
-        <a class="signup" href="signup.php"><strong>SIGN UP</strong></a>
+        <a class="login" href="accounts/login.php"><strong>LOG IN</strong></a>
+        <a class="signup" href="accounts/signup.php"><strong>SIGN UP</strong></a>
     </div>
 </body>
