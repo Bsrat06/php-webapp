@@ -1,0 +1,161 @@
+.container {
+    position: absolute;
+    top: 200px;
+    left: 17%;
+    text-align: center;
+}
+
+.landing_image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.nav-bar {
+    border: 1px #353535 solid;
+    background-color: #353535;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 5;
+}
+
+
+#nav-home {
+    list-style: none;
+    background-color: white;
+    background: none;
+    font-size: large;
+    letter-spacing: 1px;
+    color: black;
+    float: left;
+    position: absolute;
+    left: 30%;
+
+}
+
+.nav-bar #nav-home a {
+    text-decoration: none;
+    color: red;
+}
+
+#nav-home a:hover {
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(245, 245, 245);
+    transition: 0.4s;
+}
+
+#nav-getresources {
+    list-style: none;
+    background-color: white;
+    background: none;
+    font-size: large;
+    letter-spacing: 1px;
+    float: left;
+    position: absolute;
+    left: 40%;
+
+}
+
+.nav-bar #nav-getresources a {
+    position: relative;
+    left: -20px;
+    text-decoration: none;
+    color: red;
+}
+
+#nav-getresources a:hover {
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(245, 245, 245);
+    transition: 0.4s;
+}
+
+#nav-blog {
+    position: relative;
+    left: -20px;
+    list-style: none;
+    background: none;
+    font-size: large;
+    letter-spacing: 1px;
+    float: left;
+    position: absolute;
+    left: 55%;
+
+}
+
+.nav-bar #nav-blog a {
+    text-decoration: none;
+    color: red;
+}
+
+#nav-blog a:hover {
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(245, 245, 245);
+    transition: 0.4s;
+}
+
+.welcome {
+    position: relative;
+    top: 50px;
+    left: -32%;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.astu {
+    position: relative;
+    top: -16px;
+    left: 13%;
+    color: rgb(224, 0, 0);
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+.motto {
+    position: relative;
+    top: -35px;
+    color: grey;
+}
+
+.login {
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    background-color: none;
+    border: 1px solid rgb(68, 68, 68);
+    padding: 7px 25px 7px 25px;
+    margin-right: 20px;
+    color: rgb(68, 68, 68);
+    letter-spacing: 2px;
+}
+
+.login:hover {
+    border-color: rgb(155, 155, 155);
+    color: rgb(104, 104, 104);
+    transition: 0.1s;
+}
+
+.signup {
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    background-color: rgb(224, 0, 0);
+    border: 1px solid rgb(224, 0, 0);
+    padding: 7px 25px 7px 25px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.signup:hover {
+    background-color: rgb(197, 0, 0);
+    border-color: rgb(197, 0, 0);
+    transition: 0.1s;
+}
