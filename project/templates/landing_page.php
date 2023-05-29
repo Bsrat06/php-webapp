@@ -22,7 +22,7 @@
                     <li><a href="home.php">HOME</a></li>
                 </div>
                 <div id="nav-getresources">
-                    <li><a href="getresources.php">GET RESOURCES</a></li>
+                    <li><a href="getresources.php">RESOURCES</a></li>
                 </div>
                 <div id="nav-blog">
                     <li><a href="blog.php">BLOG</a></li>
@@ -32,8 +32,8 @@
 
         <p class="welcome">WELCOME TO</p>
         <p class="astu">ASTU DIGITAL RESOURCES</p>
-        <p class="motto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde temporibus nemo mollitia
-            explicabo corporis molestias ab illo ducimus sequi.</p>
+        <p class="motto">a remarkable place where you can find learning materials for your desired courses from the infamous Adama Science And Technology University.</p>
+
         <a class="login" href="accounts/login.php"><strong>LOG IN</strong></a>
         <a class="signup" href="accounts/signup.php"><strong>SIGN UP</strong></a>
     </div>

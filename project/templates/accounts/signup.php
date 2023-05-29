@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <span class="forms">
             <form action="http://localhost/astuDigitalResource/project/templates/accounts/signup.php" method="POST">
                 <p id="username"><input type="text" name="username" placeholder="Enter Username" required></p>
-                <p id="email"><input type="text" name="email" placeholder="Enter Email" required></p>
+                <p id="email"><input type="email" name="email" placeholder="Enter Email" required></p>
                 <p id="password"><input type="password" name="password" placeholder="Enter password" required></p>
                 <p id="confirmpassword"><input type="password" name="confirmpassword" placeholder="Confirm password"
                         required></p>

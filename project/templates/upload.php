@@ -1,13 +1,16 @@
 <?php
 
 
+include_once("db_connectivity.php");
 session_start();
 require_once("auth_check.php");
 
+if (isset($_POST["submit"])){
+    $file= $_FILES["file"];
+}
+
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +19,7 @@ require_once("auth_check.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href= "../static/css/blog.css">
+    <link rel="stylesheet" href= "../static/css/upload.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -30,9 +33,7 @@ require_once("auth_check.php");
                 <div id="nav-getresources"><li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">RESOURCES</a></li></div>
                 <?php
                 if (!isset($_SESSION)){
-                    echo "<div id=nav-login><li><a href='http://localhost/astuDigitalResource/project/accounts/login.php'>LOG IN</a></li></div>";
-                    echo "<div id='nav-signup'><li><a href='http://localhost/astuDigitalResource/project/accounts/signup.php'>SIGN UP</a></li></div>";
-                }
+}
                 else{
                     echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
                 }
@@ -40,6 +41,12 @@ require_once("auth_check.php");
                 <div id="nav-blog"><li><a href="blog.php">BLOG</a></li></div>
             </ul>
         </div>
-        <h1 class="title">Coming Soon!</h1>
+        <h1 class="title">Upload a new document!</h1>
     </div>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <p><input type="radio" name="course" value="Python"></p>
+        <p class="file-input"><input type="file" name="file"></p>
+        <p><button type="submit" name="submit">UPLOAD</button></p>
+    </form>
+
 </body>

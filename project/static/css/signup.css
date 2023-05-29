@@ -3,7 +3,7 @@
     left: 40%;
     top: 20%;
     background-color: none;
-    width: 682px;
+    width: 684px;
     height: 50%;
 }
 .signup-image{
@@ -156,7 +156,7 @@ input {
     border-width: 1px;
     padding-left: 10px;
     margin: 5px 0px 10px 0px;
-    border: 1px solid rgb(223, 223, 223);
+    border: 1px solid rgb(218, 218, 218);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -164,7 +164,7 @@ input {
 }
 
 input:hover {
-    border-color: rgb(172, 211, 211);
+    border-color: rgb(255, 255, 255);
     transition: 0.2s;
 }
 
@@ -174,8 +174,9 @@ input:hover {
     top: 10px;
     color: rgb(68, 68, 68);
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
 }
+
 
 .btn-signup{
     position: relative;
@@ -198,6 +199,6 @@ input:hover {
 input::placeholder{
     position: relative;
     left: -10px;
-    color: rgb(223, 223, 223);
+    color: rgb(156, 156, 156);
     letter-spacing: 1px;
 }

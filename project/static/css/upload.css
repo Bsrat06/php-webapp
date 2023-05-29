@@ -1,10 +1,14 @@
-body {
+
+body{
     background-color: #ffffff;
     color: #353535;
 }
+.container2{
+    margin: 0% 5% 0% 5%;
+}
 
 
-.nav-bar {
+.nav-bar{
     border: 1px #353535 solid;
     background-color: #353535;
     width: 100%;
@@ -12,81 +16,99 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    box-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px 5px;
     position: fixed;
     z-index: 2;
-}
+}   
 
-
-#nav-home {
+ 
+#nav-home{
     list-style: none;
-    background: none;
     font-size: large;
     letter-spacing: 1px;
+    color: black;
     float: left;
     position: absolute;
-    left: 27%;
+    left: 30%;
 
 }
-
-.nav-bar #nav-home a {
+.nav-bar #nav-home a{
     text-decoration: none;
     color: white;
 }
 
-#nav-home a:hover {
+#nav-home a:hover{
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
+
+}
+#nav-getresources{
+    list-style: none;
+    font-size: large;
+    letter-spacing: 1px;
+    color: black;
+    float: left;
+    position: absolute;
+    left: 40%;
+    
+}
+.nav-bar #nav-getresources a{
+    text-decoration: none;
+    color: white;
+}
+#nav-getresources a:hover{
     /*background-color: rgb(202, 202, 202);*/
     color: rgb(255, 73, 73);
     transition: 0.4s;
 }
 
-#nav-getresources {
+#nav-blog{
     list-style: none;
-    background: none;
     font-size: large;
     letter-spacing: 1px;
+    color: #0c243c;
     float: left;
     position: absolute;
-    left: 37%;
-
+    left: 55%;
+    
 }
 
-.nav-bar #nav-getresources a {
+.nav-bar #nav-blog a{
     text-decoration: none;
     color: white;
 }
-
-#nav-getresources a:hover {
+#nav-blog a:hover{
     /*background-color: rgb(202, 202, 202);*/
     color: rgb(255, 73, 73);
     transition: 0.4s;
 }
-#nav-blog {
+
+
+#nav-upload{
     list-style: none;
-    background: none;
     font-size: large;
     letter-spacing: 1px;
+    color: #0c243c;
     float: left;
     position: absolute;
-    left: 50%;
-
+    left: 60%;
+    
 }
 
-.nav-bar #nav-blog a {
+.nav-bar #nav-upload a{
     text-decoration: none;
     color: white;
 }
-
-#nav-blog a:hover {
+#nav-upload a:hover{
+    /*background-color: rgb(202, 202, 202);*/
     color: rgb(255, 73, 73);
     transition: 0.4s;
 }
-
 
 #nav-logout {
     list-style: none;
     font-size: large;
-    letter-spacing: 1px;
     text-align: center;
     width: 100px;
     height: 20px;
@@ -108,51 +130,10 @@ body {
     transition: 0.4s;
 }
 
-.home-image {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 80%;
-    filter: brightness(75%);
-    z-index: -4;
-}
 
-.title {
-    position: absolute;
-    top: 17%;
-    left: 38%;
-    text-align: center;
-    margin: 100px 0px 50px 0px;
-    color: white;
-    font-size: 35px;
-    font-weight: 10;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-}
-
-.title2 {
-    position: absolute;
-    top: 35%;
-    left: 23%;
-    text-align: center;
-    color: rgb(255, 0, 0);
-    filter: brightness(120%);
-    font-size: 70px;
-    font-weight: 10;
-    font-family: 'Roboto', sans-serif;
-}
-
-.about {
-    font-size: 30px;
-    text-align: center;
-}
-
-.bio p {
+.title{
     position: relative;
-    top: 550px;
-    margin: 15px 70px 0px 70px;
-    letter-spacing: 0.6px;
-    line-height: 30px;
-
+    top: 100px;
+    text-align: center;
+    margin: 0px 0px 150px 0px;
 }

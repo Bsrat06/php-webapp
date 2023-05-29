@@ -1,6 +1,7 @@
 
 body{
     background-color: #ffffff;
+    color: #353535;
 }
 .container2{
     margin: 0% 5% 0% 5%;
@@ -28,17 +29,19 @@ body{
     color: black;
     float: left;
     position: absolute;
-    left: 30%;
+    left: 27%;
 
 }
 .nav-bar #nav-home a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
 
 #nav-home a:hover{
     /*background-color: rgb(202, 202, 202);*/
-    color: rgba(0, 75, 75, 0.616);
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
+
 }
 #nav-getresources{
     list-style: none;
@@ -47,41 +50,67 @@ body{
     color: black;
     float: left;
     position: absolute;
-    left: 40%;
+    left: 37%;
     
 }
 .nav-bar #nav-getresources a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
 #nav-getresources a:hover{
     /*background-color: rgb(202, 202, 202);*/
-    color: rgba(0, 75, 75, 0.616);
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
 }
-#nav-login{
+
+#nav-blog{
     list-style: none;
     font-size: large;
     letter-spacing: 1px;
-    color: black;
+    color: #0c243c;
     float: left;
     position: absolute;
-    left: 83%;
+    left: 50%;
+    
+}
 
-}
-.nav-bar #nav-login a{
+.nav-bar #nav-blog a{
     text-decoration: none;
-    color: rgb(0, 255, 0);
+    color: white;
 }
-#nav-login a:hover{
-    color: rgb(0, 184, 0);
+#nav-blog a:hover{
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
+}
+
+
+#nav-upload{
+    list-style: none;
+    font-size: large;
+    letter-spacing: 1px;
+    color: #0c243c;
+    float: left;
+    position: absolute;
+    left: 59%;
+    
+}
+
+.nav-bar #nav-upload a{
+    text-decoration: none;
+    color: white;
+}
+#nav-upload a:hover{
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
 }
 
 #nav-logout {
     list-style: none;
-    background-color: rgb(112, 196, 230);
     font-size: large;
+    letter-spacing: 1px;
     text-align: center;
-    color: white;
     width: 100px;
     height: 20px;
     padding: 5px 0px 5px 0px;
@@ -94,51 +123,14 @@ body{
 
 .nav-bar #nav-logout a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 50, 50);
 }
 
 #nav-logout a:hover {
-    color: rgb(0, 184, 0);
-    transition: 1s;
+    color: rgb(255, 112, 112);
+    transition: 0.4s;
 }
 
-#nav-signup{
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 90%;
-}
-
-.nav-bar #nav-signup a{
-    text-decoration: none;
-    color: rgb(0, 255, 0);
-}
-#nav-signup a:hover{
-    color: rgb(0, 184, 0);
-}
-
-#nav-blog{
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: #0c243c;
-    float: left;
-    position: absolute;
-    left: 55%;
-    
-}
-
-.nav-bar #nav-blog a{
-    text-decoration: none;
-    color: red;
-}
-#nav-blog a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgba(0, 75, 75, 0.616);
-}
 
 .title{
     position: relative;
@@ -148,14 +140,16 @@ body{
 }
 .books_title{
     position: relative;
-    left: -6%;
-    background-color: rgba(245, 245, 245, 0.822);
+    left: 0%;
+    background-color: rgb(241, 241, 241);
     border-radius: 10px;
-    width: 110%;
-    padding-left: 20px;
+    width: 90%;
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 40px;
-    font-weight: 100;
-    font-size: 22px;
+    font-weight: bold;
+    font-size: 24px;
 }
 .new_books{
     position: relative;
@@ -169,13 +163,13 @@ body{
 .bookslist{
     position: relative;
     left: 5%;
-    background-color: orangered;
+    background-color: rgba(196, 196, 196, 0.192);
     width: 20%;
-    height: 5px;
+    height: 250px;
     text-align: center;
     font-size: larger;
     border-radius: 15px;
     float: left;
-    margin: 0px 30px 20% 0px;
+    margin: 0px 30px 4% 0px;
     letter-spacing: 0px;
 }

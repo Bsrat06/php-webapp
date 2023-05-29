@@ -8,7 +8,7 @@ body{
 
 
 .nav-bar{
-    border: 1px #252525 solid;
+    border: 1px #353535 solid;
     background-color: #353535;
     width: 100%;
     height: 50px;
@@ -24,7 +24,6 @@ body{
 #nav-home{
     list-style: none;
     font-size: large;
-    color: black;
     float: left;
     position: absolute;
     left: 30%;
@@ -32,86 +31,30 @@ body{
 }
 .nav-bar #nav-home a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
 
 #nav-home a:hover{
     /*background-color: rgb(202, 202, 202);*/
-    color: rgba(0, 75, 75, 0.616);
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
 }
-#nav-about{
+#nav-getresources{
     list-style: none;
     font-size: large;
-    color: black;
     float: left;
     position: absolute;
     left: 40%;
     
 }
-.nav-bar #nav-about a{
+.nav-bar #nav-getresources a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
-#nav-about a:hover{
+#nav-getresources a:hover{
     /*background-color: rgb(202, 202, 202);*/
-    color: rgba(0, 75, 75, 0.616);
-}
-#nav-login{
-    list-style: none;
-    font-size: large;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 83%;
-
-}
-.nav-bar #nav-login a{
-    text-decoration: none;
-    color: rgb(0, 255, 0);
-}
-#nav-login a:hover{
-    color: rgb(0, 184, 0);
-}
-#nav-logout{
-    list-style: none;
-    background-color: rgb(112, 196, 230);
-    font-size: large;
-    text-align: center;
-    color: white;
-    width: 100px;
-    height: 20px;
-    padding: 5px 0px 5px 0px;
-    float: left;
-    position: absolute;
-    left: 83%;
-    top: 10px;
-    border-radius: 10px;
-}
-.nav-bar #nav-logout a{
-    text-decoration: none;
-    color: white;
-}
-#nav-logout a:hover{
-    color: rgb(0, 184, 0);
-    transition: 1s;
-}
-
-#nav-signup{
-    list-style: none;
-    background-color: white;
-    font-size: large;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 90%;
-}
-
-.nav-bar #nav-signup a{
-    text-decoration: none;
-    color: rgb(0, 255, 0);
-}
-#nav-signup a:hover{
-    color: rgb(0, 184, 0);
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
 }
 
 #nav-blog{
@@ -126,15 +69,39 @@ body{
 
 .nav-bar #nav-blog a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
 #nav-blog a:hover{
     /*background-color: rgb(202, 202, 202);*/
-    color: rgba(0, 75, 75, 0.616);
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
 }
+#nav-logout{
+    list-style: none;
+    font-size: large;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    padding: 5px 0px 5px 0px;
+    float: left;
+    position: absolute;
+    left: 83%;
+    top: 10px;
+    border-radius: 10px;
+}
+.nav-bar #nav-logout a{
+    text-decoration: none;
+    color: rgb(255, 50, 50);
+}
+#nav-logout a:hover{
+    color: rgb(255, 112, 112);
+    transition: 0.4s;
+}
+
+
 .title{
     position: relative;
     top: 100px;
-    color: red;
+    color: #353535;
     text-align: center;
 }

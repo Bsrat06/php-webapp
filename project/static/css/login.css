@@ -48,7 +48,8 @@
 
 #nav-home a:hover {
     /*background-color: rgb(202, 202, 202);*/
-    color: rgb(235, 235, 235);
+    color: #999999;
+    transition: 0.4px;
 }
 
 #nav-getresources {
@@ -69,46 +70,8 @@
 
 #nav-getresources a:hover {
     /*background-color: rgb(202, 202, 202);*/
-    color: rgb(235, 235, 235);
-}
-
-#nav-login {
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 83%;
-
-}
-
-.nav-bar #nav-login a {
-    text-decoration: none;
-    color: rgb(0, 255, 0);
-}
-
-#nav-login a:hover {
-    color: rgb(0, 255, 0);
-}
-
-#nav-signup {
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 90%;
-}
-
-.nav-bar #nav-signup a {
-    text-decoration: none;
-    color: rgb(0, 255, 0);
-}
-
-#nav-signup a:hover {
-    color: rgb(0, 255, 0);
+    color: #999999;
+    transition: 0.4px;
 }
 
 #nav-blog {
@@ -128,7 +91,48 @@
 
 #nav-blog a:hover {
     /*background-color: rgb(202, 202, 202);*/
-    color: rgb(235, 235, 235);
+    color: #999999;
+    transition: 0.4px;
+}
+
+#nav-login {
+    list-style: none;
+    font-size: large;
+    letter-spacing: 1px;
+    float: left;
+    position: absolute;
+    left: 83%;
+
+}
+
+.nav-bar #nav-login a {
+    text-decoration: none;
+    color: rgb(0, 189, 9);
+}
+
+#nav-login a:hover {
+    color: black;
+    transition: 0.4s;
+}
+
+#nav-signup {
+    list-style: none;
+    font-size: large;
+    letter-spacing: 1px;
+    color: black;
+    float: left;
+    position: absolute;
+    left: 90%;
+}
+
+.nav-bar #nav-signup a {
+    text-decoration: none;
+    color: rgb(0, 189, 9);
+}
+
+#nav-signup a:hover {
+    color: black;
+    transition: 0.4s;
 }
 
 .login-image {
@@ -226,4 +230,36 @@ a {
 
 .successMessage {
     color: green;
+}
+.or{
+    margin-top: 40px;
+    margin-left: 65px;
+    text-align: center;
+}
+#left{
+    position: relative;
+    top: -22px;
+    left: -55px;
+    width: 60%;
+
+}
+#right{
+    position: relative;
+    top: -32px;
+    margin-left: 158px;
+    width: 60%;
+}
+.create{
+    position: relative;
+    left: 40px;
+    text-align: center;
+    margin-top: -40px;
+}
+a .create{
+    
+    color:rgb(0, 189, 9);
+}
+a .create:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
 }

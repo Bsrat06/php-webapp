@@ -25,8 +25,8 @@ require_once "auth_check.php";
 <body>
     <img class="home-image" src="../images/2021-11-27-12-08-51.jpg">
     <div class="container">
-        <h1 class="title">ASTU</h1>
-        <h1 class="title2">Digital Resources</h1>
+        <h1 class="title">WELCOME TO</h1>
+        <h1 class="title2">ASTU Digital Resources</h1>
 
         <div class="nav-bar">
             <ul>
@@ -34,7 +34,7 @@ require_once "auth_check.php";
                     <li><a href="">HOME</a></li>
                 </div>
                 <div id="nav-getresources">
-                    <li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">GET RESOURCES</a></li>
+                    <li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">RESOURCES</a></li>
                 </div>
                 <?php
                 if (!isset($_SESSION)) {
@@ -47,6 +47,7 @@ require_once "auth_check.php";
                 <div id="nav-blog">
                     <li><a href="blog.php">BLOG</a></li>
                 </div>
+
             </ul>
         </div>
         <div class="bio">

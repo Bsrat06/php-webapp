@@ -1,6 +1,8 @@
 <?php
 
+//to keep the user logged in via session
 session_start();
+
 $server= "localhost";
 $dbusername= "root";
 $dbpassword= "";
@@ -46,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
             
         else{
             $successMessage= "LOGIN Successful!";
-            header("Location: home.php");
+            header("Location: ../home.php");
         }
 
         //close the connection
@@ -110,7 +112,8 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
                         ?>
                     </div>
                     <p class="signin"><button class= "btn-signin" type="submit">Sign In</button></p>
-                    <p class="or">or</p>
+                    <p class="or">or<hr id="left"><hr id="right"></p>
+                    <a href="signup.php"><p class="create">create a new account.</p></a>
                 </form>
             </span>
         </div>
