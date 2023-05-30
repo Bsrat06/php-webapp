@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-<img class= "signup-image" src= "../../images/2021-12-01-13-35-20.jpg">
+<img class= "signup-image" src= "../../images/dollar-gill-0V7_N62zZcU-unsplash.jpg">
     <div class="container">
         <div class="nav-bar">
             <ul>
@@ -82,19 +82,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li><a href="../home.php">HOME</a></li>
                 </div>
                 <div id="nav-getresources">
-                    <li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">GET
+                    <li><a href="../getresources.php">GET
                             RESOURCES</a></li>
                 </div>
                 <div id="nav-login">
-                    <li><a href="http://localhost/astuDigitalResource/project/templates/accounts/login.php">LOG IN</a>
+                    <li><a href="login.php">LOG IN</a>
                     </li>
                 </div>
                 <div id="nav-signup">
-                    <li><a href="http://localhost/astuDigitalResource/project/templates/accounts/signup.php">SIGN UP</a>
+                    <li><a href="signup.php">SIGN UP</a>
                     </li>
                 </div>
                 <div id="nav-blog">
-                    <li><a href="#">BLOG</a></li>
+                    <li><a href="../blog_list.php">BLOG</a></li>
                 </div>
             </ul>
         </div>

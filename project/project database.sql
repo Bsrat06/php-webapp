@@ -66,3 +66,9 @@ CREATE TABLE video_tutorials (
     FOREIGN KEY (course_name) REFERENCES Courses(course_name)
 );
 
+CREATE TABLE blog(
+   id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(300),
+    body VARCHAR(15000),
+    publish_date DATE DEFAULT CURRENT_DATE
+);

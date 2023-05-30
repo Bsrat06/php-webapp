@@ -23,7 +23,7 @@ require_once "auth_check.php";
         <ul>
             <div id="nav-home"><li><a href="home.php">HOME</a></li></div>
             <div id="nav-getresources"><li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">RESOURCES</a></li></div>
-            <div id="nav-blog"><li><a href="blog.php">BLOG</a></li></div>
+            <div id="nav-blog"><li><a href="blog_list.php">BLOG</a></li></div>
             <?php
                         
                         

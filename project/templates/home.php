@@ -41,11 +41,14 @@ require_once "auth_check.php";
                     echo "<div id=nav-login><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/login.php'>LOG IN</a></li></div>";
                     echo "<div id='nav-signup'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/signup.php'>SIGN UP</a></li></div>";
                 } else {
+                    if ($_SESSION["user"]=="bsrat@gmail.com"){
+                        echo "<div id='nav-upload'><li><a href='upload.php'>UPLOAD</a></li></div>";
+                }
                     echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
                 }
                 ?>
                 <div id="nav-blog">
-                    <li><a href="blog.php">BLOG</a></li>
+                    <li><a href="blog_list.php">BLOG</a></li>
                 </div>
 
             </ul>

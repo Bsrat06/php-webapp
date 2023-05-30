@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 .container {
     position: absolute;
     left: 40%;
@@ -155,11 +158,12 @@ input {
     height: 25px;
     border-width: 1px;
     padding-left: 10px;
-    margin: 5px 0px 10px 0px;
+    margin: 7px 0px 10px 0px;
     border: 1px solid rgb(218, 218, 218);
     border-top: none;
     border-left: none;
     border-right: none;
+    color: rgb(218, 218, 218);
 
 }
 
@@ -172,9 +176,16 @@ input:hover {
 .forms p {
     position: relative;
     top: 10px;
-    color: rgb(68, 68, 68);
     font-size: 14px;
     padding-bottom: 1px;
+   
+}
+
+input::placeholder{
+    position: relative;
+    left: -10px;
+    color: rgb(156, 156, 156);
+    letter-spacing: 1px;
 }
 
 
@@ -195,10 +206,4 @@ input:hover {
 .btn-signup:hover {
     background-color: rgb(0, 185, 0);
     transition: 0.2s;
-}
-input::placeholder{
-    position: relative;
-    left: -10px;
-    color: rgb(156, 156, 156);
-    letter-spacing: 1px;
 }

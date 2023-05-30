@@ -25,7 +25,7 @@
                     <li><a href="getresources.php">RESOURCES</a></li>
                 </div>
                 <div id="nav-blog">
-                    <li><a href="blog.php">BLOG</a></li>
+                    <li><a href="blog_list.php">BLOG</a></li>
                 </div>
             </ul>
         </div>

@@ -38,15 +38,13 @@ if (isset($_POST["submit"])){
                     echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
                 }
                 ?>
-                <div id="nav-blog"><li><a href="blog.php">BLOG</a></li></div>
+                <div id="nav-blog"><li><a href="blog_list.php">BLOG</a></li></div>
             </ul>
         </div>
         <h1 class="title">Upload a new document!</h1>
     </div>
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <p><input type="radio" name="course" value="Python"></p>
-        <p class="file-input"><input type="file" name="file"></p>
-        <p><button type="submit" name="submit">UPLOAD</button></p>
-    </form>
+    <p class="new_blog"><a href="new_blog_post.php">New Blog Post</a></p>
+    
+
 
 </body>

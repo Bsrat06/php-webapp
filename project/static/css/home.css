@@ -82,6 +82,27 @@ body {
     transition: 0.4s;
 }
 
+#nav-upload{
+    list-style: none;
+    font-size: large;
+    letter-spacing: 1px;
+    color: #0c243c;
+    float: left;
+    position: absolute;
+    left: 59%;
+    
+}
+
+.nav-bar #nav-upload a{
+    text-decoration: none;
+    color: white;
+}
+#nav-upload a:hover{
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
+}
+
 
 #nav-logout {
     list-style: none;
@@ -136,7 +157,7 @@ body {
     top: 35%;
     left: 23%;
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: aqua;
     filter: brightness(120%);
     font-size: 70px;
     font-weight: 10;
