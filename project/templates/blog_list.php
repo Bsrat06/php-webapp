@@ -48,16 +48,14 @@ require_once("auth_check.php");
                 </div>
             </ul>
         </div>
-        <h1 class="title">Latest Blog Posts</h1>
-        <a href="new_blog_post.php">Add Blog Post</a><br>
+        <h1 class="title">Latest Posts</h1>
+        <a class="add_blog" href="new_blog_post.php">Add Blog Post</a><br>
         <?php
         $sql = "SELECT * FROM blog";
         $result = mysqli_query($connection, $sql);
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                "<div class='blog_list'>";
-                echo "<a href='blog_detail.php'> <img class= 'cover_image' src='../images/{$row['cover_image']}'>", "<p class='blog_title'>{$row['title']}</p>", "<p class='date'>posted on: {$row['publish_date']}</p></a>";
-                "</div>";
+                echo "<div class='blog_list'><a href='blog_detail.php'><img class= 'cover_image' src='../images/{$row['cover_image']}'>", "<p class='blog_title'>{$row['title']}</p>", "<p class='date'>posted on: {$row['publish_date']}</p></a></div>";   
             }
         }
         ?>

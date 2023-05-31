@@ -1,7 +1,9 @@
-
 body{
     background-color: rgb(235, 235, 235);
     color: #353535;
+}
+.container{
+    margin: 0% 10% 0% 10%;
 }
 .container2{
     margin: 0% 5% 0% 5%;
@@ -29,7 +31,7 @@ body{
     color: black;
     float: left;
     position: absolute;
-    left: 30%;
+    left: 27%;
 
 }
 .nav-bar #nav-home a{
@@ -50,7 +52,7 @@ body{
     color: black;
     float: left;
     position: absolute;
-    left: 40%;
+    left: 37%;
     
 }
 .nav-bar #nav-getresources a{
@@ -70,7 +72,7 @@ body{
     color: #0c243c;
     float: left;
     position: absolute;
-    left: 55%;
+    left: 50%;
     
 }
 
@@ -92,7 +94,7 @@ body{
     color: #0c243c;
     float: left;
     position: absolute;
-    left: 60%;
+    left: 59%;
     
 }
 
@@ -109,6 +111,7 @@ body{
 #nav-logout {
     list-style: none;
     font-size: large;
+    letter-spacing: 1px;
     text-align: center;
     width: 100px;
     height: 20px;
@@ -133,7 +136,38 @@ body{
 
 .title{
     position: relative;
-    top: 100px;
+    top: 80px;
     text-align: center;
-    margin: 0px 0px 150px 0px;
+    margin: 0px 0px 100px 0px;
+}
+a{
+    text-decoration: none;
+}
+.add_blog{
+    position: fixed;
+    top: 38px;
+    left: 3.15%;
+    font-size: larger;
+    font-weight: bold;
+    background-color: red;
+    padding: 3px 6px 3px 6px;
+    border-radius: 5px;
+    color: white;
+    z-index:7;
+}
+
+.blog_title{
+    text-align: center;
+    color: #353535;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;
+}
+.blog_body{
+    color: #353535;
+    letter-spacing: 0.1px;
+}
+.date{
+    color: #8f8f8f;
+    
 }

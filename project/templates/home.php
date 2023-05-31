@@ -23,7 +23,7 @@ require_once "auth_check.php";
 </head>
 
 <body>
-    <img class="home-image" src="../images/2021-11-27-12-08-51.jpg">
+    <img class="home-image" src="../images/dollar-gill-0V7_N62zZcU-unsplash.jpg">
     <div class="container">
         <h1 class="title">WELCOME TO</h1>
         <h1 class="title2">ASTU Digital Resources</h1>

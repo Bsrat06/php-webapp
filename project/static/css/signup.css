@@ -50,6 +50,7 @@ body{
 #nav-home a:hover {
     /*background-color: rgb(202, 202, 202);*/
     color: rgb(235, 235, 235);
+    transition: 0.4s;
 }
 
 #nav-getresources {
@@ -71,6 +72,27 @@ body{
 #nav-getresources a:hover {
     /*background-color: rgb(202, 202, 202);*/
     color: rgb(235, 235, 235);
+    transition: 0.4s;
+}
+#nav-blog {
+    list-style: none;
+    font-size: large;
+    letter-spacing: 1px;
+    float: left;
+    position: absolute;
+    left: 55%;
+
+}
+
+.nav-bar #nav-blog a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-blog a:hover {
+    /*background-color: rgb(202, 202, 202);*/
+    color: rgb(235, 235, 235);
+    transition: 0.4s;
 }
 
 #nav-login {
@@ -90,7 +112,8 @@ body{
 }
 
 #nav-login a:hover {
-    color: rgb(0, 255, 0);
+    color: black;
+    transition: 0.4s;
 }
 
 #nav-signup {
@@ -109,27 +132,8 @@ body{
 }
 
 #nav-signup a:hover {
-    color: rgb(0, 255, 0);
-}
-
-#nav-blog {
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    float: left;
-    position: absolute;
-    left: 55%;
-
-}
-
-.nav-bar #nav-blog a {
-    text-decoration: none;
     color: black;
-}
-
-#nav-blog a:hover {
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(235, 235, 235);
+    transition: 0.4s;
 }
 
 .login-image {
