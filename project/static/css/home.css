@@ -1,6 +1,6 @@
-body {
-    background-color: rgb(235, 235, 235);
+body{
     color: #353535;
+    line-height: 24pt;
 }
 
 
@@ -12,7 +12,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    box-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px 5px none;
     position: fixed;
     z-index: 2;
 }
@@ -23,8 +23,8 @@ body {
     background: none;
     font-size: large;
     letter-spacing: 1px;
-    float: left;
     position: absolute;
+    top: 10px;
     left: 27%;
 
 }
@@ -47,6 +47,7 @@ body {
     letter-spacing: 1px;
     float: left;
     position: absolute;
+    top: 10px;
     left: 37%;
 
 }
@@ -68,6 +69,7 @@ body {
     letter-spacing: 1px;
     float: left;
     position: absolute;
+    top: 10px;
     left: 50%;
 
 }
@@ -89,6 +91,7 @@ body {
     color: #0c243c;
     float: left;
     position: absolute;
+    top: 10px;
     left: 59%;
     
 }
@@ -115,7 +118,7 @@ body {
     float: left;
     position: absolute;
     left: 83%;
-    top: 10px;
+    top: 5px;
     border-radius: 10px;
 }
 
@@ -131,20 +134,20 @@ body {
 
 .home-image {
     position: absolute;
-    top: 0%;
+    top: -5%;
     left: 0%;
     width: 100%;
     height: 80%;
+    opacity: 90%;
     filter: brightness(75%);
-    z-index: -4;
+    z-index: -1;
 }
 
 .title {
     position: absolute;
-    top: 17%;
+    top: 22%;
     left: 38%;
     text-align: center;
-    margin: 100px 0px 50px 0px;
     color: white;
     font-size: 35px;
     font-weight: 10;
@@ -154,7 +157,7 @@ body {
 
 .title2 {
     position: absolute;
-    top: 35%;
+    top: 28%;
     left: 23%;
     text-align: center;
     color: aqua;
@@ -163,17 +166,105 @@ body {
     font-weight: 10;
     font-family: 'Roboto', sans-serif;
 }
-
-.about {
-    font-size: 30px;
+.contacts{
+    position: relative;
+    top: 380px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
+    background-color: none;
+    margin-bottom: 20px;
+}
+.facebook{
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: aqua;
+    padding: 10px 10px 10px 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.facebook:hover{
+    color: rgb(238, 238, 238);
+}
+.instagram{
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: aqua;
+    padding: 10px 10px 10px 10px;
+    font-size: 40px;
+}
+.linkedin{
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: aqua;
+    padding: 10px 10px 10px 10px;
+    font-size: 40px;
+}
+.twitter{
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: aqua;
+    padding: 10px 10px 10px 10px;
+    font-size: 40px;
+}
+.google{
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: aqua;
+    padding: 10px 10px 10px 10px;
+    font-size: 40px;
 }
 
-.bio p {
+.about_image{
     position: relative;
-    top: 550px;
-    margin: 15px 70px 0px 70px;
-    letter-spacing: 0.6px;
-    line-height: 30px;
+    top: 450px;
+    left: 150px;
+    width: 35%;
+    height: 500px;
+    z-index: -5;
+}
 
+.about {
+    position: relative;
+    top: -55px;
+    left: 30%;
+    background-color: none;
+    width: 50%;
+    font-size: 75px;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    z-index: 1;
+}
+.about_body{
+    position: relative;
+    top: -20px;
+    left: 50%;
+    text-align: left;
+    width: 45%;
+    margin-bottom: 75px;
+    background-color: none;
+
+}
+.about_body2{
+    position: relative;
+    left: -518px;
+    width: 1100px;
+    background-color: none;
+}
+.why{
+    font-size: 50px;
+    font-weight: Medium;
+    text-align: center;
+}
+.why_body{
+    position: relative;
+    left: 140px;
+    width: 80%;
+    background-color: none;
 }
