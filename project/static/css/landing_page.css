@@ -5,6 +5,7 @@
     top: 200px;
     left: 17%;
     text-align: center;
+    
 }
 
 .landing_image {
@@ -25,6 +26,7 @@
     top: 0px;
     left: 0px;
     position: fixed;
+    font-family: 'Varela Round', sans-serif;
     z-index: 5;
 }
 
@@ -119,12 +121,14 @@
     color: rgb(224, 0, 0);
     font-size: 30px;
     letter-spacing: 7px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .motto {
     position: relative;
     top: -35px;
     color: grey;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .login {
@@ -138,6 +142,7 @@
     margin-right: 20px;
     color: rgb(68, 68, 68);
     letter-spacing: 2px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .login:hover {
@@ -156,6 +161,7 @@
     padding: 7px 25px 7px 25px;
     color: white;
     letter-spacing: 2px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .signup:hover {

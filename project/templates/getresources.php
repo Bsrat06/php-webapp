@@ -14,6 +14,9 @@ require_once "auth_check.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstuDigitalResource</title>
     <link rel="stylesheet" href= "../static/css/getresources.css">
+
+            <!-- logout icon -->
+            <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'>
     
 </head>
 <body>
@@ -34,7 +37,8 @@ require_once "auth_check.php";
                     if ($_SESSION["user"]=="bsrat@gmail.com"){
                         echo "<div id='nav-upload'><li><a href='upload.php'>UPLOAD</a></li></div>";
                 }
-                    echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
+                    //echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
+                    echo "<div id='nav-logout'><li><i class='gg-log-out'></i></li></div>";
                 }
             ?>
         </ul>

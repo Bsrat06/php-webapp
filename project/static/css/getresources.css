@@ -1,7 +1,11 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/log-out.css');
+
+
 
 body{
     background-color: rgb(235, 235, 235);
     color: #353535;
+    font-family: 'Varela Round', sans-serif;
 }
 .container2{
     margin: 0% 5% 0% 5%;
@@ -106,7 +110,10 @@ body{
     transition: 0.4s;
 }
 
-#nav-logout {
+#nav-logout{
+    position: absolute;
+    left: 90%;
+    top: 12px;
     list-style: none;
     font-size: large;
     letter-spacing: 1px;
@@ -115,18 +122,15 @@ body{
     height: 20px;
     padding: 5px 0px 5px 0px;
     float: left;
-    position: absolute;
-    left: 83%;
-    top: 10px;
     border-radius: 10px;
 }
 
-.nav-bar #nav-logout a {
+.nav-bar #nav-logout i{
     text-decoration: none;
     color: rgb(255, 50, 50);
 }
 
-#nav-logout a:hover {
+#nav-logout i:hover{
     color: rgb(255, 112, 112);
     transition: 0.4s;
 }

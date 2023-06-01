@@ -23,6 +23,8 @@ if (isset($_POST["submit"])){
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+            <!-- logout icon -->
+            <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'>
     
 </head>
 <body>
@@ -35,7 +37,7 @@ if (isset($_POST["submit"])){
                 if (!isset($_SESSION)){
 }
                 else{
-                    echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
+                    echo "<div id='nav-logout'><li><i class='gg-log-out'></i></li></div>";
                 }
                 ?>
                 <div id="nav-blog"><li><a href="blog_list.php">BLOG</a></li></div>
