@@ -49,7 +49,9 @@ CREATE TABLE books (
     author VARCHAR(100),
     isbn VARCHAR(20),
     edition INT,
-    FOREIGN KEY (course_name) REFERENCES Courses(course_name)
+    FOREIGN KEY (course_name) REFERENCES Courses(course_name),
+    cover_image VARCHAR(500) set DEFAULT 'jess-bailey-_z2aaldUAFs-unsplash.jpg';
+
 );
 CREATE TABLE course_outlines (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -70,5 +72,12 @@ CREATE TABLE blog(
    id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(300),
     body VARCHAR(15000),
-    publish_date DATE DEFAULT CURRENT_DATE
+    publish_date DATE DEFAULT CURRENT_DATE,
+    cover_image VARCHAR(500)
+);
+CREATE TABLE curriculum (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  department VARCHAR(100),
+  file VARCHAR(150) DEFAULT 'no file attached!',
+  description TEXT
 );

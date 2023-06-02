@@ -4,6 +4,7 @@
 
 body{
     color: #353535;
+    background-color: white;
     line-height: 24pt;
     font-family: 'Varela Round', sans-serif;
 }
@@ -411,4 +412,29 @@ body{
     left: 140px;
     width: 45%;
     background-color: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: relative;
+    left: -8px;
+    top: 8px;
+    width: 101%;
+    height: 250px;
+    text-align: center;
+    color: white;
+    background-color: #353535;
+}
+footer p{
+    position: relative;
+    top: 50%;
 }

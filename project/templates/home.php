@@ -136,5 +136,8 @@ require_once "auth_check.php";
             </div>
     </div>
 </body>
+<footer>
+<p>This is the footer</p>
+</footer>
 
 </html>
