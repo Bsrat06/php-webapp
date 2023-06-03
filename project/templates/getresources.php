@@ -59,7 +59,7 @@ require_once "auth_check.php";
         </div>
         
         <div class='front_page'>
-            <p class="front_title">Get Beyond the Average</p>
+            <p class="front_title">Getting Beyond the Average</p>
             <img class= 'resource_image' src='../images/tamanna-rumee-FtJEat_S7Q4-unsplash.jpg'>
         </div>
 
@@ -115,13 +115,91 @@ require_once "auth_check.php";
                 while ($row = mysqli_fetch_assoc($result)) {
 
                     // to download pdf file of the curriculum
-                    echo "<div class='curriculums_list'><a href='curriculums_list.php'>", "<p class='pdf'><a href='../files/curriculum/{$row['file']}'><div class='pdf_icon'><i class='fa-solid fa-file-pdf'></i></div><div class='download'>Download Pdf</div></a></p>", "<p class='department'>Department: {$row['department']}</p>", "<p class='description'>Description: {$row['file']}</p></a></div>";
+                    echo "<div class='curriculums_list'><a href='curriculums_list.php'>", "<p class='pdf'><a href='../files/curriculum/{$row['file']}'><div class='pdf_icon'><i class='fa-solid fa-file-pdf'></i></div></a></p>", "<p class='department'>Department: {$row['department']}</p>", "<p class='description'>Description: {$row['file']}</p></a></div>";
                 }
 
             } else {
                 echo "No Available Resources. check back later!!";
             }
 
+
+            //fetch lectures from the database
+            $sql = "SELECT * FROM lectures";
+            $result = mysqli_query($connection, $sql);
+            $resultCheck = mysqli_num_rows($result);
+
+
+            if ($resultCheck > 0) {
+                echo "<div class='lectures'>Lectures (PDFs and PPTXs)</div>";
+
+                while ($row = mysqli_fetch_assoc($result)) {
+
+                    // to download pdf file of the lectures
+                    echo "<div class='lectures_list'><a href='lectures_list.php'>", "<p class='pdf'><a href='../files/lectures/{$row['course_name']}/{$row['file']}'><div class='file_icon'><i class='fa-solid fa-file'></i></div><p class='file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='lectures_course_name'>Course Name: {$row['course_name']}</p>", "<p class='lectures_title'>Title: {$row['title']}</p></a></div>";
+                }
+
+            } else {
+                echo "No Available Resources. check back later!!";
+            }
+
+             //fetch mid-exams from the database
+             $sql = "SELECT * FROM mid_exams";
+             $result = mysqli_query($connection, $sql);
+             $resultCheck = mysqli_num_rows($result);
+ 
+ 
+             if ($resultCheck > 0) {
+                 echo "<div class='mid_exams'>Mid-Exams (PDFs and Images)</div>";
+ 
+                 while ($row = mysqli_fetch_assoc($result)) {
+ 
+                     // to download pdf file of the mid_exams
+                     echo "<div class='mid_exams_list'><a href='mid_exams_list.php'>", "<p class='mid_exams_files'><a href='../files/exams/mid-exams/{$row['course_name']}/{$row['file']}'><div class='mid_exams_file_icon'><i class='fa-solid fa-file'></i></div><p class='mid_exams_file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='mid_exams_course_name'>Course Name: {$row['course_name']}</p>", "<p class='mid_exams_title'>Title: {$row['title']}</p></a></div>";
+                 }
+ 
+             } else {
+                 echo "No Available Resources. check back later!!";
+             }
+
+
+               //fetch final-exams from the database
+               $sql = "SELECT * FROM final_exams";
+               $result = mysqli_query($connection, $sql);
+               $resultCheck = mysqli_num_rows($result);
+   
+   
+               if ($resultCheck > 0) {
+                   echo "<div class='final_exams'>Final-Exams (PDFs and Images)</div>";
+   
+                   while ($row = mysqli_fetch_assoc($result)) {
+   
+                       // to view/download pdf file of the final_exams
+                       echo "<div class='final_exams_list'><a href='final_exams_list.php'>", "<p class='final_exams_files'><a href='../files/exams/final-exams/{$row['course_name']}/{$row['file']}'><div class='final_exams_file_icon'><i class='fa-solid fa-file'></i></div><p class='final_exams_file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='final_exams_course_name'>Course Name: {$row['course_name']}</p>", "<p class='final_exams_title'>Title: {$row['title']}</p></a></div>";
+                   }
+   
+               } else {
+                   echo "No Available Resources. check back later!!";
+               }
+
+
+               //fetch video_tutorials from the database
+               $sql = "SELECT * FROM video_tutorials";
+               $result = mysqli_query($connection, $sql);
+               $resultCheck = mysqli_num_rows($result);
+   
+   
+               if ($resultCheck > 0) {
+                   echo "<div class='video_tutorials'>Video_Tutorials (PDFs and Images)</div>";
+   
+                   while ($row = mysqli_fetch_assoc($result)) {
+   
+                       // to view/download pdf file of the video_tutorials
+                       echo "<div class='video_tutorials_list'><a href='video_tutorials_list.php'>", "<p class='video_tutorials_files'><a href='{$row['url']}'><div class='video_tutorials_file_icon'><i class='fa-brands fa-youtube'></i></div><p class='video_tutorials_file_download_icon'><i class='fa-solid fa-link'></i></p></a></p>", "<p class='video_tutorials_course_name'>Course Name: {$row['course_name']}</p>", "<p class='video_tutorials_title'>Title: {$row['title']}</p></a></div>";
+                   }
+   
+               } else {
+                   echo "No Available Resources. check back later!!";
+               }
             ?>
 
 

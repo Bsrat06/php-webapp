@@ -38,7 +38,8 @@ CREATE TABLE Courses (
 CREATE TABLE lectures (
     id INT AUTO_INCREMENT PRIMARY KEY,
     course_name VARCHAR(50),
-    title VARCHAR(100),
+    title VARCHAR(200),
+    file VARCHAR(255),
     FOREIGN KEY (course_name) REFERENCES Courses(course_name)
 );
 CREATE TABLE books (
@@ -81,5 +82,18 @@ CREATE TABLE curriculum (
   file VARCHAR(150) DEFAULT 'no file attached!',
   description TEXT
 );
-
+CREATE TABLE mid_exams (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(50),
+    title VARCHAR(200),
+    file VARCHAR(255),
+    FOREIGN KEY (course_name) REFERENCES Courses(course_name)
+);
+CREATE TABLE final_exams (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(50),
+    title VARCHAR(200),
+    file VARCHAR(255),
+    FOREIGN KEY (course_name) REFERENCES Courses(course_name)
+);
 
