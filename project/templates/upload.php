@@ -46,6 +46,8 @@ if (isset($_POST["submit"])){
         <h1 class="title">Upload a new document!</h1>
     </div>
     <p class="new_blog"><a href="new_blog_post.php">New Blog Post</a></p>
+
+
     
 
 

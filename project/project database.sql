@@ -39,7 +39,6 @@ CREATE TABLE lectures (
     id INT AUTO_INCREMENT PRIMARY KEY,
     course_name VARCHAR(50),
     title VARCHAR(100),
-    video VARCHAR(255),
     FOREIGN KEY (course_name) REFERENCES Courses(course_name)
 );
 CREATE TABLE books (
@@ -49,8 +48,9 @@ CREATE TABLE books (
     author VARCHAR(100),
     isbn VARCHAR(20),
     edition INT,
+    file VARCHAR(150) set DEFAULT 'no file attached';
+    cover_image VARCHAR(500) set DEFAULT 'jess-bailey-_z2aaldUAFs-unsplash.jpg',
     FOREIGN KEY (course_name) REFERENCES Courses(course_name),
-    cover_image VARCHAR(500) set DEFAULT 'jess-bailey-_z2aaldUAFs-unsplash.jpg';
 
 );
 CREATE TABLE course_outlines (
@@ -81,3 +81,5 @@ CREATE TABLE curriculum (
   file VARCHAR(150) DEFAULT 'no file attached!',
   description TEXT
 );
+
+

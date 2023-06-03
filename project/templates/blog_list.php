@@ -50,9 +50,12 @@ require_once("auth_check.php");
                 </div>
             </ul>
         </div>
+
         <h1 class="title">Latest Posts</h1>
-        <a class="add_blog" href="new_blog_post.php">Add Blog Post</a><br>
         <?php
+                if ($_SESSION["user"]== "bsrat@gmail.com"){
+                    "<a class='add_blog' href= 'new_blog_post.php'>Add Blog Post</a><br>";
+                    }
         $sql = "SELECT * FROM blog";
         $result = mysqli_query($connection, $sql);
         if (mysqli_num_rows($result) > 0) {
