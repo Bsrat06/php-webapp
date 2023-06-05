@@ -114,7 +114,9 @@ require_once "auth_check.php";
                 dolorem tempora. Quae?</p>
             <div class="books">
                 <p class="books_title">Books</p>
-                <img class="books_image" src="../images/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg">
+                
+                <img class="books_image" src="../images/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg" data-tilt data-tilt-glare>
+            
                 <p class='book_icon'><i class="fa-solid fa-book"></i></p>
                 <p class="books_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
                     pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
@@ -125,7 +127,7 @@ require_once "auth_check.php";
             </div>
             <div class="blogs">
                 <p class="blogs_title">Blogs</p>
-                <img class="blogs_image" src="../images/florian-klauer-mk7D-4UCfmg-unsplash.jpg">
+                <img class="blogs_image" src="../images/florian-klauer-mk7D-4UCfmg-unsplash.jpg" data-tilt data-tilt-glare>
                 <p class='blogs_icon'><i class="fa-solid fa-blog"></i></p>
                 <p class="blogs_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
                     pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
@@ -136,7 +138,7 @@ require_once "auth_check.php";
             </div>
             <div class="roadmaps">
                 <p class="roadmaps_title">Roadmaps</p>
-                <img class="roadmaps_image" src="../images/kelly-sikkema-io0ZLYbu31s-unsplash.jpg">
+                <img class="roadmaps_image" src="../images/kelly-sikkema-io0ZLYbu31s-unsplash.jpg" data-tilt data-tilt-glare>
                 <p class='roadmaps_icon'><i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i></p>
                 <p class="roadmaps_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
                     pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
@@ -147,7 +149,7 @@ require_once "auth_check.php";
             </div>
             <div class="recommendations">
                 <p class="recommendations_title">Recommendations</p>
-                <img class="recommendations_image" src="../images/marvin-meyer-SYTO3xs06fU-unsplash (1).jpg">
+                <img class="recommendations_image" src="../images/marvin-meyer-SYTO3xs06fU-unsplash (1).jpg" data-tilt data-tilt-glare>
                 <p class='recommendations_icon'><i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i></p>
                 <p class="recommendations_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
                     pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
@@ -158,6 +160,7 @@ require_once "auth_check.php";
             </div>
         </div>
     </div>
+    <script src="vanilla-tilt.js"></script>
 </body>
 <footer>
     <div class="top">

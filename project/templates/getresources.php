@@ -90,7 +90,7 @@ require_once "auth_check.php";
 
                     $cssClass = $cssClasses[$i % count($cssClasses)];
                     
-                    echo "<div class='$cssClass'><img class= 'cover_image' src='../files/books/cover/{$row['cover_image']}'>", "<a href= '../files/books/{$row['file']}'><p class='book_icon'><i class='fa-solid fa-book'></i></p><p class='download_icon'><i class='fa-solid fa-download'></i></p>", "<p class='course_name'>Course Name: {$row['course_name']}</p>", "<p class='books_title'>title: {$row['title']}</p>", "<p class='author'>author: {$row['author']}</p>", "<p class='isbn'>isbn: {$row['isbn']}</p>", "<p class='edition'>edition: {$row['edition']}</p></a></div>";
+                    echo "<div class='$cssClass' data-tilt><img class= 'cover_image' src='../files/books/cover/{$row['cover_image']}'>", "<a href= '../files/books/{$row['file']}'><p class='book_icon'><i class='fa-solid fa-book'></i></p><p class='download_icon'><i class='fa-solid fa-download'></i></p>", "<p class='course_name'>Course Name: {$row['course_name']}</p>", "<p class='books_title'>title: {$row['title']}</p>", "<p class='author'>author: {$row['author']}</p>", "<p class='isbn'>isbn: {$row['isbn']}</p>", "<p class='edition'>edition: {$row['edition']}</p></a></div>";
                     
                     $i++;
                     if ($i==2){
@@ -115,7 +115,7 @@ require_once "auth_check.php";
                 while ($row = mysqli_fetch_assoc($result)) {
 
                     // to download pdf file of the curriculum
-                    echo "<div class='curriculums_list'><a href='curriculums_list.php'>", "<p class='pdf'><a href='../files/curriculum/{$row['file']}'><div class='pdf_icon'><i class='fa-solid fa-file-pdf'></i></div><p class='file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='department'>Department: {$row['department']}</p>", "<p class='description'>Description: {$row['file']}</p></a></div>";
+                    echo "<div class='curriculums_list' data-tilt><a href='curriculums_list.php'>", "<p class='pdf'><a href='../files/curriculum/{$row['file']}'><div class='pdf_icon'><i class='fa-solid fa-file-pdf'></i></div><p class='file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='department'>Department: {$row['department']}</p>", "<p class='description' Description:> {$row['file']}</p></a></div>";
                 }
 
             } else {
@@ -135,7 +135,7 @@ require_once "auth_check.php";
                 while ($row = mysqli_fetch_assoc($result)) {
 
                     // to download pdf file of the lectures
-                    echo "<div class='lectures_list'><a href='lectures_list.php'>", "<p class='pdf'><a href='../files/lectures/{$row['course_name']}/{$row['file']}'><div class='file_icon'><i class='fa-solid fa-file'></i></div><p class='file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='lectures_course_name'>Course Name: {$row['course_name']}</p>", "<p class='lectures_title'>Title: {$row['title']}</p></a></div>";
+                    echo "<div class='lectures_list' data-tilt><a href='lectures_list.php'>", "<p class='pdf'><a href='../files/lectures/{$row['course_name']}/{$row['file']}'><div class='file_icon'><i class='fa-solid fa-file'></i></div><p class='file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='lectures_course_name'>Course Name: {$row['course_name']}</p>", "<p class='lectures_title'>Title: {$row['title']}</p></a></div>";
                 }
 
             } else {
@@ -154,7 +154,7 @@ require_once "auth_check.php";
                  while ($row = mysqli_fetch_assoc($result)) {
  
                      // to download pdf file of the mid_exams
-                     echo "<div class='mid_exams_list'><a href='mid_exams_list.php'>", "<p class='mid_exams_files'><a href='../files/exams/mid-exams/{$row['course_name']}/{$row['file']}'><div class='mid_exams_file_icon'><i class='fa-solid fa-file'></i></div><p class='mid_exams_file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='mid_exams_course_name'>Course Name: {$row['course_name']}</p>", "<p class='mid_exams_title'>Title: {$row['title']}</p></a></div>";
+                     echo "<div class='mid_exams_list' data-tilt><a href='mid_exams_list.php'>", "<p class='mid_exams_files'><a href='../files/exams/mid-exams/{$row['course_name']}/{$row['file']}'><div class='mid_exams_file_icon'><i class='fa-solid fa-file'></i></div><p class='mid_exams_file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='mid_exams_course_name'>Course Name: {$row['course_name']}</p>", "<p class='mid_exams_title'>Title: {$row['title']}</p></a></div>";
                  }
  
              } else {
@@ -174,7 +174,7 @@ require_once "auth_check.php";
                    while ($row = mysqli_fetch_assoc($result)) {
    
                        // to view/download pdf file of the final_exams
-                       echo "<div class='final_exams_list'><a href='final_exams_list.php'>", "<p class='final_exams_files'><a href='../files/exams/final-exams/{$row['course_name']}/{$row['file']}'><div class='final_exams_file_icon'><i class='fa-solid fa-file'></i></div><p class='final_exams_file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='final_exams_course_name'>Course Name: {$row['course_name']}</p>", "<p class='final_exams_title'>Title: {$row['title']}</p></a></div>";
+                       echo "<div class='final_exams_list' data-tilt><a href='final_exams_list.php'>", "<p class='final_exams_files'><a href='../files/exams/final-exams/{$row['course_name']}/{$row['file']}'><div class='final_exams_file_icon'><i class='fa-solid fa-file'></i></div><p class='final_exams_file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='final_exams_course_name'>Course Name: {$row['course_name']}</p>", "<p class='final_exams_title'>Title: {$row['title']}</p></a></div>";
                    }
    
                } else {
@@ -206,6 +206,7 @@ require_once "auth_check.php";
 
         </div>
     </div>
+    <script src="vanilla-tilt.js"></script>
 </body>
 
 <footer>

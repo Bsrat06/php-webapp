@@ -144,6 +144,7 @@ input:hover {
     color: rgb(68, 68, 68);
     font-size: 14px;
     padding-bottom: 10px;
+    transform: translateX(10px), translateY(-10px);
 }
 .forms p i{
     position: relative;

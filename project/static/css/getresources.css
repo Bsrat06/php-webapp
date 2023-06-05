@@ -267,7 +267,7 @@ a{
     top: -35px;
     left: 3%;
     font-size: 50px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px -10px 0px;
     color: orangered;
 }
 .pdf_icon:hover{
@@ -278,6 +278,7 @@ a{
     position: relative;
     left: 1%;
     width: 30%;
+    height: 200px;
     text-align: center;
     margin: 20px 0px 20px 20px;
     padding: 50px 0px 50px 0px;
@@ -291,6 +292,15 @@ a{
 .curriculums_list:hover{
     filter: brightness(95%);
     transition: 0.4s;
+}
+.curriculums_list .department{
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+.curriculums_list .description{
+    color: #353535;
+    opacity: 85%;
+    font-size: 15px;
 }
 
 

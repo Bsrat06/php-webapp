@@ -1,5 +1,5 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/log-out.css');
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/profile.css');
+
 
 
 body{
@@ -312,7 +312,7 @@ body{
 }
 .books_image{
     position: relative;
-    top: -50px;
+    top: -30px;
     left: 60%;
     width: 400px;
     height: 350px;
