@@ -95,45 +95,6 @@
     transition: 0.4px;
 }
 
-#nav-login {
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    float: left;
-    position: absolute;
-    left: 83%;
-
-}
-
-.nav-bar #nav-login a {
-    text-decoration: none;
-    color: rgb(0, 189, 9);
-}
-
-#nav-login a:hover {
-    color: black;
-    transition: 0.4s;
-}
-
-#nav-signup {
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 90%;
-}
-
-.nav-bar #nav-signup a {
-    text-decoration: none;
-    color: rgb(0, 189, 9);
-}
-
-#nav-signup a:hover {
-    color: black;
-    transition: 0.4s;
-}
 
 .login-image {
     position: absolute;
@@ -184,6 +145,13 @@ input:hover {
     font-size: 14px;
     padding-bottom: 10px;
 }
+.forms p i{
+    position: relative;
+    bottom: 40px;
+    left: 120%;
+    color: #353535;
+    opacity: 80%;
+}
 
 .btn-signin {
     position: relative;
@@ -232,7 +200,7 @@ a {
     color: green;
 }
 .or{
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 65px;
     text-align: center;
 }

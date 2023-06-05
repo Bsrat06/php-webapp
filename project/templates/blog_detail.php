@@ -43,7 +43,7 @@ require_once("auth_check.php");
                 if ($_SESSION["user"] == "bsrat@gmail.com") {
                     echo "<div id='nav-upload'><li><a href='upload.php'>UPLOAD</a></li></div>";
                 }
-                echo "<div id='nav-logout'><li><i class='gg-log-out'></i></li></div>";
+                echo "<div id='nav-logout'><li><a href='accounts/logout.php'><i class='gg-log-out'></i></a></li></div>";
 
                 ?>
                 <div id="nav-blog">

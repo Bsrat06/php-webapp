@@ -42,7 +42,7 @@ require_once("auth_check.php");
                 if ($_SESSION["user"] == "bsrat@gmail.com") {
                     echo "<div id='nav-upload'><li><a href='upload.php'>UPLOAD</a></li></div>";
                 }
-                echo "<div id='nav-logout'><li><i class='gg-log-out'></i></li></div>";
+                echo "<div id='nav-logout'><li><a href='accounts/logout.php'><i class='gg-log-out'></i></a></li></div>";
 
                 ?>
                 <div id="nav-blog">
@@ -66,3 +66,31 @@ require_once("auth_check.php");
         ?>
     </div>
 </body>
+
+<footer>
+    <div class="top">
+        <div class="founded">
+            <p class="title">YEAR FOUNDED</P>
+            <p class="body">1993</p>
+        </div>
+        <div class="top_location">
+            <p class="title">LOCATION</P>
+            <p class="body">ADAMA, ETHIOPIA</p>
+        </div>
+    </div>
+    <div class="get_intouch">
+        <p class="title">Get in touch</p>
+        <p class="body">bsrat06@astuniversity.com</p>
+    </div>
+    <div class="connect">
+        <p class="title">Connect</p>
+        <p class="body">LinkedIn</p>
+        <p class="body">Instagram</p>
+    </div>
+    <div class="detail">
+        <p class="title">Detail</p>
+        <p class="body">Adama Science And Technology University</p>
+        <p class="body">College Str,21</p>
+        <p class="body">Adama,Ethiopia</p>
+    </div>
+</footer>

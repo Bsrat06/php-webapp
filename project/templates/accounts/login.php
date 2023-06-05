@@ -75,6 +75,12 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <!-- fontawesome cdn icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <img class= "login-image" src= "../../images/photo_2023-05-28_11-31-55.jpg">
@@ -83,8 +89,6 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
             <ul>
                 <div id="nav-home"><li><a href="../home.php">HOME</a></li></div>
                 <div id="nav-getresources"><li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">GET RESOURCES</a></li></div>
-                <div id="nav-login"><li><a href="http://localhost/astuDigitalResource/project/templates/accounts/login.php">LOG IN</a></li></div>
-                <div id="nav-signup"><li><a href="http://localhost/astuDigitalResource/project/templates/accounts/signup.php">SIGN UP</a></li></div>
                 <div id="nav-blog"><li><a href="#">BLOG</a></li></div>
             </ul>
         </div>
@@ -99,8 +103,8 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
             </div>
             <span class="forms">
                 <form action="http://localhost/astuDigitalResource/project/templates/accounts/login.php" method="POST">
-                    <p class="email">Email<input type="email" name="email" required></p>
-                    <p class="password">Password<input type="password" name="password" required></p>
+                    <p class="email">Email<input type="email" name="email" required><i class="fa-solid fa-envelope"></i></p>
+                    <p class="password">Password<input type="password" name="password" required><i class="fa-solid fa-lock"></i></p>
                     <a class="forgot" href="#"><p>forgot password?</p></a>
                     <div class= "successMessage">
                         <?php

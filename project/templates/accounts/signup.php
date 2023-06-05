@@ -85,14 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li><a href="../getresources.php">GET
                             RESOURCES</a></li>
                 </div>
-                <div id="nav-login">
-                    <li><a href="login.php">LOG IN</a>
-                    </li>
-                </div>
-                <div id="nav-signup">
-                    <li><a href="signup.php">SIGN UP</a>
-                    </li>
-                </div>
                 <div id="nav-blog">
                     <li><a href="../blog_list.php">BLOG</a></li>
                 </div>
@@ -111,8 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p id="username"><input type="text" name="username" placeholder="Enter Username" required></p>
                 <p id="email"><input type="email" name="email" placeholder="Enter Email" required></p>
                 <p id="password"><input type="password" name="password" placeholder="Enter password" required></p>
-                <p id="confirmpassword"><input type="password" name="confirmpassword" placeholder="Confirm password"
-                        required></p>
                 <div class="successMessage">
                     <?php
                     if (!empty($successMessage)) {
@@ -126,6 +116,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </span>
     </div>
 </body>
-<script src="signup.js"></script>
 
 </html>

@@ -115,7 +115,7 @@ require_once "auth_check.php";
                 while ($row = mysqli_fetch_assoc($result)) {
 
                     // to download pdf file of the curriculum
-                    echo "<div class='curriculums_list'><a href='curriculums_list.php'>", "<p class='pdf'><a href='../files/curriculum/{$row['file']}'><div class='pdf_icon'><i class='fa-solid fa-file-pdf'></i></div></a></p>", "<p class='department'>Department: {$row['department']}</p>", "<p class='description'>Description: {$row['file']}</p></a></div>";
+                    echo "<div class='curriculums_list'><a href='curriculums_list.php'>", "<p class='pdf'><a href='../files/curriculum/{$row['file']}'><div class='pdf_icon'><i class='fa-solid fa-file-pdf'></i></div><p class='file_download_icon'><i class='fa-solid fa-download'></i></p></a></p>", "<p class='department'>Department: {$row['department']}</p>", "<p class='description'>Description: {$row['file']}</p></a></div>";
                 }
 
             } else {
@@ -207,3 +207,31 @@ require_once "auth_check.php";
         </div>
     </div>
 </body>
+
+<footer>
+    <div class="top">
+        <div class="founded">
+            <p class="title">YEAR FOUNDED</P>
+            <p class="body">1993</p>
+        </div>
+        <div class="top_location">
+            <p class="title">LOCATION</P>
+            <p class="body">ADAMA, ETHIOPIA</p>
+        </div>
+    </div>
+    <div class="get_intouch">
+        <p class="title">Get in touch</p>
+        <p class="body">bsrat06@astuniversity.com</p>
+    </div>
+    <div class="connect">
+        <p class="title">Connect</p>
+        <p class="body">LinkedIn</p>
+        <p class="body">Instagram</p>
+    </div>
+    <div class="detail">
+        <p class="title">Detail</p>
+        <p class="body">Adama Science And Technology University</p>
+        <p class="body">College Str,21</p>
+        <p class="body">Adama,Ethiopia</p>
+    </div>
+</footer>

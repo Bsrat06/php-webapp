@@ -95,46 +95,6 @@ body{
     transition: 0.4s;
 }
 
-#nav-login {
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 83%;
-
-}
-
-.nav-bar #nav-login a {
-    text-decoration: none;
-    color: rgb(0, 255, 0);
-}
-
-#nav-login a:hover {
-    color: black;
-    transition: 0.4s;
-}
-
-#nav-signup {
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
-    position: absolute;
-    left: 90%;
-}
-
-.nav-bar #nav-signup a {
-    text-decoration: none;
-    color: rgb(0, 255, 0);
-}
-
-#nav-signup a:hover {
-    color: black;
-    transition: 0.4s;
-}
 
 .login-image {
     position: absolute;

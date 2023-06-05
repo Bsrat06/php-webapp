@@ -138,3 +138,153 @@ body{
     top: 200px;
     margin: -30px 40px 40px 40px;
 }
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    top: 100%;
+    width: 101%;
+    height: 550px;
+    text-align: center;
+    color: white;
+    background-color: #252525;
+    font-family: 'Varela Round', sans-serif;
+}
+.top{
+    position: relative;
+    left: 15px;
+    background-color: rgb(0, 182, 182);
+    border-radius: 0px 0px 20px 20px;
+    width: 97.4%;
+    height: 300px;
+}
+.founded{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    color: black;
+}
+.founded .title{
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 35px;
+    color: black;
+    text-align: center;
+    width: 100px;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.founded .body{
+    position: absolute;
+    top: -44px;
+    left: 100px;
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    width: 250px;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: none;
+    font-size: 55px;
+}
+.top_location{
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    color: black;
+}
+.top_location .title{
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 35px;
+    color: black;
+    text-align: center;
+    width: 100px;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.top_location .body{
+    position: absolute;
+    top: -44px;
+    left: 100px;
+    width: 550px;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: none;
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    font-size: 55px;
+}
+.get_intouch{
+    position: absolute;
+    top: 330px;
+    left: 6%;
+}
+.get_intouch .title{
+    background-color: none;
+    position: relative;
+    left: 0px;
+    text-align: left;
+    margin-bottom: -22px;
+    color: grey;
+    font-weight: bold;
+    font-size: medium;
+    letter-spacing: 0;
+}
+.get_intouch .body{
+    text-align: left;
+}
+
+.connect{
+    position: absolute;
+    top: 330px;
+    left: 42%;
+}
+.connect .title{
+    background-color: none;
+    position: relative;
+    left: 0px;
+    text-align: left;
+    margin-bottom: -22px;
+    color: grey;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.connect .body{
+    text-align: left;
+    background-color: none;
+    margin-bottom: -20px;
+}
+
+.detail{
+    position: absolute;
+    top: 330px;
+    left: 70%;
+}
+.detail .title{
+    background-color: none;
+    position: relative;
+    left: 0px;
+    text-align: left;
+    margin-bottom: -22px;
+    color: rgb(163, 163, 163);
+    font-weight: bold;
+    font-size: medium;
+    letter-spacing: 0;
+}
+.detail .body{
+    text-align: left;
+    background-color: none;
+    margin-bottom: -20px;
+}
