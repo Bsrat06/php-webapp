@@ -36,7 +36,7 @@ require_once "auth_check.php";
 </head>
 
 <body>
-    <div class="container">
+    <div class="main-container">
         <div class="nav-bar">
             <ul>
                 <div id="nav-home">
@@ -64,7 +64,7 @@ require_once "auth_check.php";
         </div>
         <h1 class="title">WELCOME TO</h1>
         <h1 class="title2">ASTU Digital Resources</h1>
-        <img class="home-image" src="../images/dollar-gill-0V7_N62zZcU-unsplash.jpg">
+        <img class="home-image" src="../images/google-deepmind-E301rX-2CeQ-unsplash.jpg">
 
 
 
@@ -75,88 +75,126 @@ require_once "auth_check.php";
             <a class="twitter" href=""><i class="fa-brands fa-twitter"></i></a>
             <a class="google" href=""><i class="fa-brands fa-google-plus"></i></a>
         </div>
-        <img class="about_image" src="../images/jess-bailey-K47Tk9IEQPQ-unsplash.jpg">
-        <p class="about"><strong>ABOUT US</strong></p>
-        <div class="about_body">
-            <p>This website is designed to help students, teachers, staff members, and anyone who is struggling to find
-                information that is provided by the Adama Science and Technology University.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores repudiandae ratione ipsum provident.
+        <div class="sub-container">
+            <img class="about_image" src="../images/google-deepmind-8heReYC6Zt0-unsplash.jpg">
+            <p class="about"><span class="ab"><strong>AB</strong></span><strong>OUT US</strong></p>
+            <div class="about_body">
+                <p>This website is designed to help students, teachers, staff members, and anyone who is struggling to
+                    find
+                    information that is provided by the Adama Science and Technology University.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores repudiandae ratione ipsum
+                    provident.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat ratione dignissimos, alias
+                    ea
+                    aliquam totam commodi vero placeat itaque adipisci unde ducimus aliquid non, earum neque optio
+                    consectetur repellat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam aut quasi</p>
+                <p class="about_body2">ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam aut quasi
+                    excepturi culpa
+                    ducimus quam incidunt, suscipit eveniet id. Voluptas illum vitae nam quis odit dignissimos quam enim
+                    mollitia!</p>
+            </div>
+            <div class="why">
+                <img class="why_image" src="../images/google-deepmind-Krw-2KP7bOE-unsplash.jpg">
+                <p>Why Choose This Platform ?</p>
+            </div>
+            <p class="why_body1">
+                <strong>Reliable</strong><br><i class="fa-solid fa-shield-halved"></i>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
+                suscipit.
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat ratione dignissimos, alias ea
-                aliquam totam commodi vero placeat itaque adipisci unde ducimus aliquid non, earum neque optio
-                consectetur repellat.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam aut quasi</p>
-            <p class="about_body2">ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam aut quasi
-                excepturi culpa
-                ducimus quam incidunt, suscipit eveniet id. Voluptas illum vitae nam quis odit dignissimos quam enim
-                mollitia!</p>
-        </div>
-        <div class="why">
-            <p>Why Choose This Platform ?</p>
-        </div>
+            <p class="why_body2">
+                <strong>Well Organized</strong><br><i class="fa-solid fa-warehouse"></i>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
+                suscipit.
+            </p>
+            <p class="why_body3">
+                <strong>Certified</strong><br><i class="fa-solid fa-certificate"></i>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
+                suscipit
+                necessitatibus alias dolorem aut.
+            </p>
+            <div class="products">
+                <img class="products_image" src="../images/google-deepmind-4QVqSh4VvP4-unsplash.jpg">
+                <p class="products_title">Products</p>
+                <p class="products_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sed a
+                    aspernatur, id
+                    architecto, nihil minima laudantium amet nisi esse ea molestias nostrum porro necessitatibus ullam
+                    eos
+                    dolorem tempora. Quae?</p>
+                <div class="actual_products">
 
-        <p class="why_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
-            suscipit
-            necessitatibus alias dolorem aut. Labore dignissimos placeat, ullam recusandae fugiat repellat reprehenderit
-            asperiores amet, optio numquam nobis?</p>
-        <p class="why_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
-            suscipit
-            necessitatibus alias dolorem aut. Labore dignissimos placeat, ullam recusandae fugiat repellat reprehenderit
-            asperiores amet, optio numquam nobis?</p>
-        <p class="why_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
-            suscipit
-            necessitatibus alias dolorem aut. Labore dignissimos placeat, ullam recusandae fugiat repellat reprehenderit
-            asperiores amet, optio numquam nobis?</p>
-        <div class="products">
-            <p class="products_title">Products</p>
-            <p class="products_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sed a aspernatur, id
-                architecto, nihil minima laudantium amet nisi esse ea molestias nostrum porro necessitatibus ullam eos
-                dolorem tempora. Quae?</p>
-            <div class="books">
-                <p class="books_title">Books</p>
-                
-                <img class="books_image" src="../images/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg" data-tilt data-tilt-glare>
-            
-                <p class='book_icon'><i class="fa-solid fa-book"></i></p>
-                <p class="books_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
-                    pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
-                <p class="books_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est sunt at
-                    nostrum</p>
-                <p class="books_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas laudantium autem
-                    similique facilis mollitia modi quis.</p>
-            </div>
-            <div class="blogs">
-                <p class="blogs_title">Blogs</p>
-                <img class="blogs_image" src="../images/florian-klauer-mk7D-4UCfmg-unsplash.jpg" data-tilt data-tilt-glare>
-                <p class='blogs_icon'><i class="fa-solid fa-blog"></i></p>
-                <p class="blogs_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
-                    pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
-                <p class="blogs_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est sunt at
-                    nostrum</p>
-                <p class="blogs_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas laudantium autem
-                    similique facilis mollitia modi quis.</p>
-            </div>
-            <div class="roadmaps">
-                <p class="roadmaps_title">Roadmaps</p>
-                <img class="roadmaps_image" src="../images/kelly-sikkema-io0ZLYbu31s-unsplash.jpg" data-tilt data-tilt-glare>
-                <p class='roadmaps_icon'><i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i></p>
-                <p class="roadmaps_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
-                    pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
-                <p class="roadmaps_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est sunt at
-                    nostrum</p>
-                <p class="roadmaps_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas laudantium
-                    autem similique facilis mollitia modi quis.</p>
-            </div>
-            <div class="recommendations">
-                <p class="recommendations_title">Recommendations</p>
-                <img class="recommendations_image" src="../images/marvin-meyer-SYTO3xs06fU-unsplash (1).jpg" data-tilt data-tilt-glare>
-                <p class='recommendations_icon'><i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i></p>
-                <p class="recommendations_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae facilis
-                    pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
-                <p class="recommendations_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est sunt at
-                    nostrum</p>
-                <p class="recommendations_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas laudantium
-                    autem similique facilis mollitia modi quis.</p>
+                    <div class="books">
+                        <p class="books_title">Books</p>
+
+                        <img class="books_image" src="../images/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg" data-tilt
+                            data-tilt-glare>
+
+                        <p class='book_icon'><i class="fa-solid fa-book"></i></p>
+                        <p class="books_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae
+                            facilis
+                            pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
+                        <p class="books_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est
+                            sunt
+                            at
+                            nostrum</p>
+                        <p class="books_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas
+                            laudantium
+                            autem
+                            similique facilis mollitia modi quis.</p>
+                    </div>
+
+                    <div class="blogs">
+                        <p class="blogs_title">Blogs</p>
+                        <img class="blogs_image" src="../images/florian-klauer-mk7D-4UCfmg-unsplash.jpg" data-tilt
+                            data-tilt-glare>
+                        <p class='blogs_icon'><i class="fa-solid fa-blog"></i></p>
+                        <p class="blogs_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae
+                            facilis
+                            pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
+                        <p class="blogs_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est
+                            sunt
+                            at
+                            nostrum</p>
+                        <p class="blogs_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas
+                            laudantium
+                            autem
+                            similique facilis mollitia modi quis.</p>
+                    </div>
+                </div>
+                <div class="roadmaps">
+                    <p class="roadmaps_title">Roadmaps</p>
+                    <img class="roadmaps_image" src="../images/kelly-sikkema-io0ZLYbu31s-unsplash.jpg" data-tilt
+                        data-tilt-glare>
+                    <p class='roadmaps_icon'><i class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i></p>
+                    <p class="roadmaps_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae
+                        facilis
+                        pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
+                    <p class="roadmaps_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate est
+                        sunt at
+                        nostrum</p>
+                    <p class="roadmaps_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas
+                        laudantium
+                        autem similique facilis mollitia modi quis.</p>
+                </div>
+                <div class="recommendations">
+                    <p class="recommendations_title">Recommendations</p>
+                    <img class="recommendations_image" src="../images/marvin-meyer-SYTO3xs06fU-unsplash (1).jpg"
+                        data-tilt data-tilt-glare>
+                    <p class='recommendations_icon'><i
+                            class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i></p>
+                    <p class="recommendations_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        quae facilis
+                        pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>
+                    <p class="recommendations_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        est sunt at
+                        nostrum</p>
+                    <p class="recommendations_body">vitae tempora nihil aut mollitia. Sint dolore alias, dolorum quas
+                        laudantium
+                        autem similique facilis mollitia modi quis.</p>
+                </div>
+
             </div>
         </div>
     </div>
