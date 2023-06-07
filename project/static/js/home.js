@@ -6,8 +6,7 @@ const titleContent = titleElement.innerText;
 function animateTyping(text, index, isTypingForward) {
   if (index === text.length && isTypingForward) {
     isTypingForward = false;
-  }
-  
+  }  
 
   if (index === -1 && !isTypingForward) {
     isTypingForward = true;
@@ -21,7 +20,7 @@ function animateTyping(text, index, isTypingForward) {
 
   titleElement.innerText = currentText;
 
-  const delay = isTypingForward ? 100 : 35;
+  const delay = isTypingForward ? 100 : 80;
   setTimeout(() => {
     const nextIndex = isTypingForward ? index + 1 : index - 1;
     animateTyping(text, nextIndex, isTypingForward);

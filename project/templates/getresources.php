@@ -63,7 +63,7 @@ require_once "auth_check.php";
         </div>
 
         <div class='front_page'>
-            <p class="title">Getting Beyond the Average</p>
+            <p class="title">Getting Beyond the</p> <p class="title2">Average</p>
             <img class='resource_image' src='../images/jess-bailey-_z2aaldUAFs-unsplash.jpg'>
             <div class="front_links">
                 <a href= "#books"><p class="books_front_link">books</p></a>
@@ -71,6 +71,7 @@ require_once "auth_check.php";
                 <a href= "#lectures"><p class="lectures_front_link">lectures</p></a>
                 <a href= "#mid-exams"><p class="mid-exams_front_link">mid-exams</p></a>
                 <a href= "#final-exams"><p class="final-exams_front_link">final-exams</p></a>
+                <a href= "#video_tutorials"><p class="tutorials_front_link">tutorials</p></a>
             </div>
         </div>
 
@@ -199,7 +200,7 @@ require_once "auth_check.php";
 
 
             if ($resultCheck > 0) {
-                echo "<div class='video_tutorials'>Video_Tutorials (PDFs and Images)</div>";
+                echo "<div class='video_tutorials' id='video_tutorials'>Video_Tutorials (PDFs and Images)</div>";
 
                 while ($row = mysqli_fetch_assoc($result)) {
 
@@ -217,7 +218,7 @@ require_once "auth_check.php";
         </div>
 
     <script src="vanilla-tilt.js"></script>
-    <script src="../static/js/home.js"></script>
+    <script src="../static/js/resource.js"></script>
 </body>
 
 <footer>

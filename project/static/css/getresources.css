@@ -128,6 +128,18 @@ body {
     font-size: 60px;
     font-weight: bold;
 }
+.title2{
+    position: relative;
+    top: 0px;
+    left: 160px;
+    background-color: none;
+    width: 200px;
+    margin-bottom: -120px;
+    border-bottom: 3px solid purple;
+    font-size: 80px;
+    font-weight: bold;
+    color: purple;
+}
 
 .container2 {
     position: relative;
@@ -138,8 +150,8 @@ body {
 .front_links {
     position: relative;
     top: 260px;
-    left: 18%;
-    width: 720px;
+    left: 15%;
+    width: 750px;
     height: 100px;
 }
 
@@ -199,12 +211,24 @@ body {
     color: purple;
     border-bottom: 3px solid transparent;
 }
+.tutorials_front_link {
+    position: relative;
+    top: -263px;
+    left: 780px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 78px;
+    padding-bottom: 5px;
+    color: purple;
+    border-bottom: 3px solid transparent;
+}
 
 .books_front_link:hover,
 .curriculums_front_link:hover,
 .lectures_front_link:hover,
 .mid-exams_front_link:hover,
-.final-exams_front_link:hover{
+.final-exams_front_link:hover, 
+.tutorials_front_link:hover{
     color: black;
     border-color: purple;
     transition: 0.45s;
@@ -215,6 +239,7 @@ body {
     position: relative;
     top: 80px;
     text-align: center;
+    padding-top: 70px;
     margin: 0px 0px 100px 0px;
 }
 
@@ -311,6 +336,7 @@ a {
 .curriculums {
     font-size: 30px;
     font-weight: bold;
+    padding-top: 70px;
     margin-top: 115%;
 }
 
@@ -365,6 +391,7 @@ a {
 .lectures {
     font-size: 30px;
     font-weight: bold;
+    padding-top: 70px;
     margin-top: 35%;
 }
 
@@ -428,15 +455,16 @@ a {
 
 /* Mid-exams view Styles */
 
+.mid_exams {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-top: 35%;
+}
 .mid_exams_title {
     margin: 20px 0px 0px 0px;
 }
 
-.mid_exams {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 35%;
-}
 
 .mid_exams_file_icon i {
     position: relative;
@@ -495,15 +523,16 @@ a {
 
 /* Final-exams view Styles */
 
+.final_exams {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-top: 35%;
+}
 .final_exams_title {
     margin: 20px 0px 0px 0px;
 }
 
-.final_exams {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 35%;
-}
 
 .final_exams_file_icon i {
     position: relative;
@@ -563,15 +592,16 @@ a {
 
 /* video_tutorials view Styles */
 
+.video_tutorials {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-top: 35%;
+}
 .video_tutorials_title {
     margin: 20px 0px 0px 0px;
 }
 
-.video_tutorials {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 35%;
-}
 
 .video_tutorials_file_icon i {
     position: relative;
@@ -639,6 +669,7 @@ footer {
     height: 550px;
     text-align: center;
     color: white;
+    margin-top: 700px;
     background-color: #252525;
     font-family: 'Varela Round', sans-serif;
 }
