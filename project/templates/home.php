@@ -24,9 +24,7 @@ require_once "auth_check.php";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- logout icon -->
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'>
+        
     <!-- Rounded font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +52,7 @@ require_once "auth_check.php";
                     if ($_SESSION["user"] == "bsrat@gmail.com") {
                         echo "<div id='nav-upload'><li><a href='upload.php'>UPLOAD</a></li></div>";
                     }
-                    echo "<div id='nav-logout'><li><a href='accounts/logout.php'><i class='gg-log-out'></i></a></li></div>";
+                    echo "<div id='nav-logout'><li><a href='accounts/logout.php'><i class='fa-solid fa-power-off'></i></a></li></div>";
                 }
                 ?>
                 <div id="nav-blog">
@@ -70,14 +68,14 @@ require_once "auth_check.php";
 
         <div class="contacts">
             <a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a>
-            <a class="instagram" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="instagram" href=""><i class="fa-brands fa-square-instagram"></i></a>
             <a class="linkedin" href=""><i class="fa-brands fa-linkedin"></i></a>
             <a class="twitter" href=""><i class="fa-brands fa-twitter"></i></a>
             <a class="google" href=""><i class="fa-brands fa-google-plus"></i></a>
         </div>
         <div class="sub-container">
             <img class="about_image" src="../images/google-deepmind-8heReYC6Zt0-unsplash.jpg">
-            <p class="about"><span class="ab"><strong>AB</strong></span><strong>OUT US</strong></p>
+            <p class="about"><strong>ABOUT US</strong></p>
             <div class="about_body">
                 <p>This website is designed to help students, teachers, staff members, and anyone who is struggling to
                     find
@@ -199,6 +197,7 @@ require_once "auth_check.php";
         </div>
     </div>
     <script src="vanilla-tilt.js"></script>
+    <script src="../static/js/home.js"></script>
 </body>
 <footer>
     <div class="top">

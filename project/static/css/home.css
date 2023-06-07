@@ -1,100 +1,72 @@
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/log-out.css');
-
-
-
-body{
+body {
     color: #353535;
+    height: 100%;
     background-color: white;
     line-height: 24pt;
     font-family: 'Varela Round', sans-serif;
 }
-.sub-container{
+
+.sub-container {
     position: relative;
     top: 200px;
 }
-
 
 .nav-bar {
     border: 1px black solid;
     background-color: black;
     width: 100%;
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     box-shadow: 0px 0px 5px none;
-    position: fixed;
     z-index: 2;
+    transition: top 0.3s ease;
 }
 
+.nav-bar.hidden {
+    top: -50px;
+}
 
-#nav-home {
+#nav-home,
+#nav-getresources,
+#nav-blog,
+#nav-upload {
     list-style: none;
     background: none;
     font-size: large;
     letter-spacing: 1px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
+}
+
+#nav-home {
     position: absolute;
     top: 10px;
     left: 27%;
-
-}
-
-.nav-bar #nav-home a {
-    text-decoration: none;
-    color: aqua;
-}
-
-#nav-home a:hover {
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
 }
 
 #nav-getresources {
-    list-style: none;
-    background: none;
-    font-size: large;
-    letter-spacing: 1px;
-    float: left;
     position: absolute;
     top: 10px;
     left: 37%;
-
 }
 
-.nav-bar #nav-getresources a {
-    text-decoration: none;
-    color: aqua;
-}
-
-#nav-getresources a:hover {
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-}
 #nav-blog {
-    list-style: none;
-    background: none;
-    font-size: large;
-    letter-spacing: 1px;
-    float: left;
     position: absolute;
     top: 10px;
     left: 50%;
-
 }
 
-.nav-bar #nav-blog a {
-    text-decoration: none;
-    color: aqua;
-}
-
-#nav-blog a:hover {
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-}
-
-#nav-upload{
+#nav-upload {
     list-style: none;
     font-size: large;
     letter-spacing: 1px;
@@ -103,19 +75,7 @@ body{
     position: absolute;
     top: 10px;
     left: 59%;
-    
 }
-
-.nav-bar #nav-upload a{
-    text-decoration: none;
-    color: aqua;
-}
-#nav-upload a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-}
-
 
 #nav-logout {
     position: absolute;
@@ -132,7 +92,10 @@ body{
     border-radius: 10px;
 }
 
-.nav-bar #nav-logout i{
+#nav-logout i {
+    position: relative;
+    top: -6px;
+    left: -60px;
     text-decoration: none;
     color: rgb(255, 50, 50);
 }
@@ -141,7 +104,8 @@ body{
     color: rgb(255, 112, 112);
     transition: 0.4s;
 }
-.nav-bar #nav-logout .account_icon i{
+
+.nav-bar .account_icon i {
     position: relative;
     top: -23px;
     left: -25px;
@@ -174,80 +138,93 @@ body{
     position: absolute;
     top: 40%;
     left: 18%;
+    height: 44px;
+    padding-top: 12px;
     text-align: center;
     color: aqua;
     filter: brightness(120%);
     letter-spacing: 6px;
     font-size: 70px;
     font-weight: 10;
+    border-right: 2px solid aqua;
     font-family: 'Roboto', sans-serif;
+
 }
-.contacts{
+
+.contacts {
     position: relative;
-    top: 450px;
+    top: 510px;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     background-color: none;
     margin-bottom: 20px;
-}
-.facebook{
-    position: relative;
-    top: 11.2px;
-    background-color: none;
-    color: aqua;
-    padding: 10px 10px 10px 10px;
-    font-size: 40px;
-    font-weight: bold;
-}
-.facebook:hover{
-    color: rgb(238, 238, 238);
-}
-.instagram{
-    position: relative;
-    top: 11.2px;
-    background-color: none;
-    color: aqua;
-    padding: 10px 10px 10px 10px;
-    font-size: 40px;
-}
-.linkedin{
-    position: relative;
-    top: 11.2px;
-    background-color: none;
-    color: aqua;
-    padding: 10px 10px 10px 10px;
-    font-size: 40px;
-}
-.twitter{
-    position: relative;
-    top: 11.2px;
-    background-color: none;
-    color: aqua;
-    padding: 10px 10px 10px 10px;
-    font-size: 40px;
-}
-.google{
-    position: relative;
-    top: 11.2px;
-    background-color: none;
-    color: aqua;
-    padding: 10px 10px 10px 10px;
-    font-size: 40px;
+    z-index: 3;
 }
 
-.about_image{
+.facebook {
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: #050505;
+    padding: 10px 50px 10px 10px;
+    font-size: 38px;
+    font-weight: bold;
+}
+.instagram {
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: #050505;
+    padding: 10px 50px 10px 10px;
+    font-size: 38px;
+}
+
+.linkedin {
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: #050505;
+    padding: 10px 50px 10px 10px;
+    font-size: 38px;
+}
+
+.twitter {
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: #050505;
+    padding: 10px 50px 10px 10px;
+    font-size: 38px;
+}
+
+.google {
+    position: relative;
+    top: 11.2px;
+    background-color: none;
+    color: #050505;
+    filter: brightness(120%);
+    padding: 10px 50px 10px 10px;
+    font-size: 38px;
+}
+.facebook:hover, .instagram:hover, .linkedin:hover, .twitter:hover, .google:hover{
+    color: aquamarine;
+    transition: 0.4s;;
+}
+
+.about_image {
     position: relative;
     top: 450px;
     left: 150px;
     width: 35%;
     height: 500px;
+    filter: brightness(110%) opacity(80%);
     z-index: -5;
 }
 
-.about strong{
+.about strong {
     position: relative;
-    top: -55px;
+    top: -35px;
     left: 37%;
     background-color: none;
     width: 50%;
@@ -256,24 +233,10 @@ body{
     letter-spacing: 10px;
     margin-bottom: 30px;
     text-align: center;
-    font-family: 'Varela Round', sans-serif;
     z-index: 1;
 }
-.about .ab{
-    position: relative;
-    top: 0;
-    left: 0%;
-    background-color: none;
-    color: #353535;
-    width: 50%;
-    font-size: 75px;
-    letter-spacing: 10px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: 'Varela Round', sans-serif;
-    z-index: 1;
-}
-.about_body{
+
+.about_body {
     position: relative;
     top: -20px;
     left: 50%;
@@ -283,22 +246,24 @@ body{
     background-color: none;
 
 }
-.about_body2{
+
+.about_body2 {
     position: relative;
     left: -518px;
     width: 1100px;
     background-color: none;
 }
-.why_image{
+
+.why_image {
     position: relative;
     left: 0px;
     right: -8px;
     width: 100%;
     height: 500px;
-    filter: opacity(100%) brightness(105%);
     z-index: -1;
 }
-.why p{
+
+.why p {
     position: relative;
     top: -500px;
     font-size: 20px;
@@ -309,7 +274,7 @@ body{
     font-weight: 600;
 }
 
-.why_body1{
+.why_body1 {
     position: relative;
     top: -450px;
     left: 110px;
@@ -320,23 +285,27 @@ body{
     background-color: #19285181;
     border-radius: 5px;
 }
-.why_body1 strong{
+
+.why_body1 strong {
     color: white;
     font-weight: bold;
     font-size: 25px;
 }
-.why_body1 i{
+
+.why_body1 i {
     position: relative;
     top: -45px;
     left: 250px;
     color: aqua;
     font-size: 50px;
 }
-.why_body1 i:hover{
+
+.why_body1 i:hover {
     color: rgb(190, 0, 190);
     transition: 0.3s;
 }
-.why_body2{
+
+.why_body2 {
     position: relative;
     top: -681px;
     left: 650px;
@@ -347,24 +316,27 @@ body{
     background-color: #19285181;
     border-radius: 5px;
 }
-.why_body2 i{
+
+.why_body2 i {
     position: relative;
     top: -45px;
     left: 250px;
     color: aqua;
     font-size: 50px;
 }
-.why_body2 i:hover{
+
+.why_body2 i:hover {
     color: rgb(190, 0, 190);
     transition: 0.3s;
 }
-.why_body2 strong{
+
+.why_body2 strong {
     color: white;
     font-weight: bold;
     font-size: 25px;
 }
 
-.why_body3{
+.why_body3 {
     position: relative;
     top: -655px;
     left: 200px;
@@ -376,31 +348,36 @@ body{
     margin-bottom: -500px;
     border-radius: 5px;
 }
-.why_body3 strong{
+
+.why_body3 strong {
     position: relative;
     left: -70px;
     font-weight: bold;
     font-size: 25px;
 }
-.why_body3 i{
+
+.why_body3 i {
     position: relative;
     top: -45px;
     left: 380px;
     color: aqua;
     font-size: 50px;
 }
-.why_body3 i:hover{
+
+.why_body3 i:hover {
     color: rgb(190, 0, 190);
     transition: 0.3s;
 }
-.products_image{
+
+.products_image {
     position: relative;
     width: 100%;
     height: 540px;
     filter: brightness(105%) opacity(60%);
     z-index: -5;
 }
-.products_title{
+
+.products_title {
     text-align: center;
     margin: -180px 0px 40px 0px;
     font-size: 50px;
@@ -409,7 +386,8 @@ body{
     font-family: 'Varela Round', sans-serif;
     font-weight: 600;
 }
-.products_body{
+
+.products_body {
     position: relative;
     left: 140px;
     width: 80%;
@@ -417,7 +395,7 @@ body{
     background-color: none;
 }
 
-.books_title{
+.books_title {
     position: relative;
     top: 5px;
     left: 140px;
@@ -429,14 +407,16 @@ body{
     font-size: 35px;
     font-weight: 600;
 }
-.books_image{
+
+.books_image {
     position: relative;
     top: -30px;
     left: 60%;
     width: 400px;
     height: 350px;
 }
-.book_icon i{
+
+.book_icon i {
     position: relative;
     top: -280px;
     left: 3%;
@@ -444,7 +424,8 @@ body{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.books_body{
+
+.books_body {
     position: relative;
     top: -420px;
     left: 140px;
@@ -452,11 +433,12 @@ body{
     background-color: none;
 }
 
-.blogs{
+.blogs {
     position: relative;
     top: -250px;
 }
-.blogs_title{
+
+.blogs_title {
     position: relative;
     top: 30px;
     right: 140px;
@@ -468,14 +450,16 @@ body{
     font-size: 35px;
     font-weight: 600;
 }
-.blogs_image{
+
+.blogs_image {
     position: relative;
     top: -50px;
     left: 10%;
     width: 400px;
     height: 400px;
 }
-.blogs_icon i{
+
+.blogs_icon i {
     position: relative;
     top: -340px;
     left: 90%;
@@ -483,7 +467,8 @@ body{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.blogs_body{
+
+.blogs_body {
     position: relative;
     top: -470px;
     left: 44%;
@@ -493,14 +478,14 @@ body{
 }
 
 
-.roadmaps{
+.roadmaps {
     position: relative;
     top: -570px;
     height: 400px;
     background-color: none;
 }
 
-.roadmaps_title{
+.roadmaps_title {
     position: relative;
     top: 5px;
     left: 140px;
@@ -512,14 +497,16 @@ body{
     font-size: 35px;
     font-weight: 600;
 }
-.roadmaps_image{
+
+.roadmaps_image {
     position: relative;
     top: -50px;
     left: 60%;
     width: 400px;
     height: 350px;
 }
-.roadmaps_icon i{
+
+.roadmaps_icon i {
     position: relative;
     top: -280px;
     left: 3%;
@@ -527,20 +514,23 @@ body{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.roadmaps_body{
+
+.roadmaps_body {
     position: relative;
     top: -420px;
     left: 140px;
     width: 45%;
     background-color: none;
 }
-.recommendations{
+
+.recommendations {
     position: relative;
     top: -570px;
     height: 400px;
     background-color: none;
 }
-.recommendations_title{
+
+.recommendations_title {
     position: relative;
     top: 30px;
     right: 0;
@@ -552,14 +542,16 @@ body{
     font-size: 35px;
     font-weight: 600;
 }
-.recommendations_image{
+
+.recommendations_image {
     position: relative;
     top: -50px;
     left: 10%;
     width: 400px;
     height: 320px;
 }
-.recommendations_icon i{
+
+.recommendations_icon i {
     position: relative;
     top: -280px;
     left: 90%;
@@ -567,7 +559,8 @@ body{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.recommendations_body{
+
+.recommendations_body {
     position: relative;
     top: -420px;
     left: 44%;
@@ -575,28 +568,20 @@ body{
     background-color: none;
 }
 
-
-
-
-
-
-
-
-
-
-footer{
+footer {
     position: relative;
     left: -8px;
     bottom: -50px;
     width: 101%;
     height: 550px;
-    margin-top: -400px;
+    margin-top: -250px;
     text-align: center;
     color: white;
     background-color: #252525;
     font-family: 'Varela Round', sans-serif;
 }
-.top{
+
+.top {
     position: relative;
     left: 15px;
     background-color: rgb(0, 182, 182);
@@ -604,13 +589,15 @@ footer{
     width: 97.4%;
     height: 300px;
 }
-.founded{
+
+.founded {
     position: absolute;
     top: 70px;
     left: 40px;
     color: black;
 }
-.founded .title{
+
+.founded .title {
     background-color: none;
     border: 1px solid black;
     border-radius: 35px;
@@ -622,7 +609,8 @@ footer{
     font-size: 11px;
     letter-spacing: 1px;
 }
-.founded .body{
+
+.founded .body {
     position: absolute;
     top: -44px;
     left: 100px;
@@ -636,13 +624,15 @@ footer{
     background-color: none;
     font-size: 55px;
 }
-.top_location{
+
+.top_location {
     position: absolute;
     top: 70px;
     left: 500px;
     color: black;
 }
-.top_location .title{
+
+.top_location .title {
     background-color: none;
     border: 1px solid black;
     border-radius: 35px;
@@ -654,7 +644,8 @@ footer{
     font-size: 11px;
     letter-spacing: 1px;
 }
-.top_location .body{
+
+.top_location .body {
     position: absolute;
     top: -44px;
     left: 100px;
@@ -668,12 +659,14 @@ footer{
     border-right: none;
     font-size: 55px;
 }
-.get_intouch{
+
+.get_intouch {
     position: absolute;
     top: 330px;
     left: 6%;
 }
-.get_intouch .title{
+
+.get_intouch .title {
     background-color: none;
     position: relative;
     left: 0px;
@@ -684,16 +677,18 @@ footer{
     font-size: medium;
     letter-spacing: 0;
 }
-.get_intouch .body{
+
+.get_intouch .body {
     text-align: left;
 }
 
-.connect{
+.connect {
     position: absolute;
     top: 330px;
     left: 42%;
 }
-.connect .title{
+
+.connect .title {
     background-color: none;
     position: relative;
     left: 0px;
@@ -704,18 +699,20 @@ footer{
     font-weight: bold;
     letter-spacing: 0;
 }
-.connect .body{
+
+.connect .body {
     text-align: left;
     background-color: none;
     margin-bottom: -20px;
 }
 
-.detail{
+.detail {
     position: absolute;
     top: 330px;
     left: 70%;
 }
-.detail .title{
+
+.detail .title {
     background-color: none;
     position: relative;
     left: 0px;
@@ -726,7 +723,8 @@ footer{
     font-size: medium;
     letter-spacing: 0;
 }
-.detail .body{
+
+.detail .body {
     text-align: left;
     background-color: none;
     margin-bottom: -20px;

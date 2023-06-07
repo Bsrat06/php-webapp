@@ -2,121 +2,86 @@
 
 
 
-body{
+body {
     background-color: rgb(241, 241, 241);
     color: #353535;
     font-family: 'Varela Round', sans-serif;
 }
-.container2{
+
+.container2 {
     position: relative;
     top: 100px;
     background-color: none;
     margin: 0% 5% 0% 5%;
 }
 
-
-
-
-
-.nav-bar{
-    border: 1px #353535 solid;
-    background-color: #353535;
+.nav-bar {
+    border: 1px black solid;
+    background-color: black;
     width: 100%;
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
-    box-shadow: 0px 0px 5px;
-    position: fixed;
+    box-shadow: 0px 0px 5px none;
     z-index: 2;
-}   
+    transition: top 0.3s ease;
+}
 
- 
-#nav-home{
+.nav-bar.hidden {
+    top: -50px;
+}
+
+#nav-home,
+#nav-getresources,
+#nav-blog,
+#nav-upload {
     list-style: none;
+    background: none;
     font-size: large;
     letter-spacing: 1px;
-    color: black;
-    float: left;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
+}
+
+#nav-home {
     position: absolute;
+    top: 15px;
     left: 27%;
-
-}
-.nav-bar #nav-home a{
-    text-decoration: none;
-    color: white;
 }
 
-#nav-home a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-
-}
-#nav-getresources{
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
+#nav-getresources {
     position: absolute;
+    top: 15px;
     left: 37%;
-    
-}
-.nav-bar #nav-getresources a{
-    text-decoration: none;
-    color: white;
-}
-#nav-getresources a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
 }
 
-#nav-blog{
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: #0c243c;
-    float: left;
+#nav-blog {
     position: absolute;
+    top: 15px;
     left: 50%;
-    
 }
 
-.nav-bar #nav-blog a{
-    text-decoration: none;
-    color: white;
-}
-#nav-blog a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-}
-
-
-#nav-upload{
+#nav-upload {
     list-style: none;
     font-size: large;
     letter-spacing: 1px;
     color: #0c243c;
     float: left;
     position: absolute;
+    top: 10px;
     left: 59%;
-    
 }
 
-.nav-bar #nav-upload a{
-    text-decoration: none;
-    color: white;
-}
-#nav-upload a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-}
-
-#nav-logout{
+#nav-logout {
     position: absolute;
     left: 90%;
     top: 12px;
@@ -131,47 +96,129 @@ body{
     border-radius: 10px;
 }
 
-.nav-bar #nav-logout i{
+#nav-logout i {
+    position: relative;
+    top: -1px;
+    left: -60px;
     text-decoration: none;
     color: rgb(255, 50, 50);
 }
 
-#nav-logout i:hover{
+#nav-logout i:hover {
     color: rgb(255, 112, 112);
     transition: 0.4s;
 }
+
 .resource_image {
     position: absolute;
-    top: -5%;
+    top: 6%;
     left: 0%;
     width: 100%;
-    height: 80%;
+    height: 95%;
     filter: opacity(100%) brightness(100%);
     z-index: -1;
 }
-.front_title{
+
+.title {
     position: relative;
-    top: 100px;
+    top: 150px;
     left: 40px;
     background-color: none;
-    width: 50px;
+    width: 500px;
     font-size: 60px;
     font-weight: bold;
 }
 
-.title{
+.container2 {
     position: relative;
-    top: 100px;
-    text-align: center;
-    margin: 0px 0px 150px 0px;
+    top: 300px;
 }
-.books{
+
+
+.front_links {
+    position: relative;
+    top: 260px;
+    left: 18%;
+    width: 720px;
+    height: 100px;
+}
+
+.books_front_link {
+    font-size: 20px;
+    font-weight: bold;
+    width: 57px;
+    padding-bottom: 5px;
+    color: purple;
+    border-bottom: 3px solid transparent;
+}
+
+.curriculums_front_link {
+    position: relative;
+    top: -54px;
+    left: 130px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 112px;
+    padding-bottom: 5px;
+    color: purple;
+    border-bottom: 3px solid transparent;
+}
+
+.lectures_front_link {
+    position: relative;
+    top: -107px;
+    left: 310px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 76px;
+    padding-bottom: 5px;
+    color: purple;
+    border-bottom: 3px solid transparent;
+}
+
+.mid-exams_front_link {
+    position: relative;
+    top: -159px;
+    left: 450px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 105px;
+    padding-bottom: 5px;
+    color: purple;
+    border-bottom: 3px solid transparent;
+}
+
+.final-exams_front_link {
+    position: relative;
+    top: -212px;
+    left: 620px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 110px;
+    padding-bottom: 5px;
+    color: purple;
+    border-bottom: 3px solid transparent;
+}
+
+.books_front_link:hover,
+.curriculums_front_link:hover,
+.lectures_front_link:hover,
+.mid-exams_front_link:hover,
+.final-exams_front_link:hover{
+    color: black;
+    border-color: purple;
+    transition: 0.45s;
+}
+
+
+.books {
     position: relative;
     top: 80px;
     text-align: center;
     margin: 0px 0px 100px 0px;
 }
-.upload{
+
+.upload {
     position: relative;
     top: -48px;
     left: 60%;
@@ -182,16 +229,13 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-.upload i{
-
-}
 
 /* Books view Styles */
-.books{
+.books {
     margin-top: 60px;
 }
 
-.class1{
+.class1 {
     position: relative;
     left: 1%;
     width: 30%;
@@ -200,12 +244,13 @@ body{
     padding: 0px 0px 0px 0px;
     border: none;
     font-weight: bold;
-    background-color: #ffef43;
+    background-color: rgb(213, 249, 255);
     border-radius: 10px;
     text-align: center;
     float: left;
 }
-.class2{
+
+.class2 {
     position: relative;
     left: 1%;
     width: 30%;
@@ -219,21 +264,25 @@ body{
     text-align: center;
     float: left;
 }
-.books_list:hover{
+
+.books_list:hover {
     filter: brightness(95%);
     background-color: #87d8fd;
     transition: 0.4s;
 }
-.cover_image{
+
+.cover_image {
     width: 100%;
     height: 260px;
     border-radius: 10px;
 }
-a{
+
+a {
     color: #353535;
     text-decoration: none;
 }
-.book_icon i{
+
+.book_icon i {
     position: relative;
     top: -50px;
     left: 3%;
@@ -241,7 +290,8 @@ a{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.download_icon{
+
+.download_icon {
     position: relative;
     top: -80px;
     left: 60%;
@@ -252,17 +302,19 @@ a{
     height: 0px;
     color: #353535;
 }
-.download_icon:hover{
+
+.download_icon:hover {
     color: #353535;
 }
 
 /* Curriculums view Styles */
-.curriculums{
+.curriculums {
     font-size: 30px;
     font-weight: bold;
     margin-top: 115%;
 }
-.pdf_icon i{
+
+.pdf_icon i {
     position: relative;
     top: -35px;
     left: 3%;
@@ -270,11 +322,12 @@ a{
     margin: 0px 0px -10px 0px;
     color: orangered;
 }
-.pdf_icon:hover{
+
+.pdf_icon:hover {
     color: rgb(81, 255, 0);
 }
 
-.curriculums_list{
+.curriculums_list {
     position: relative;
     left: 1%;
     width: 30%;
@@ -289,15 +342,18 @@ a{
     font-weight: bold;
     float: left;
 }
-.curriculums_list:hover{
+
+.curriculums_list:hover {
     filter: brightness(95%);
     transition: 0.4s;
 }
-.curriculums_list .department{
+
+.curriculums_list .department {
     margin-top: -40px;
     margin-bottom: 30px;
 }
-.curriculums_list .description{
+
+.curriculums_list .description {
     color: #353535;
     opacity: 85%;
     font-size: 15px;
@@ -306,12 +362,13 @@ a{
 
 /* Lectures view Styles */
 
-.lectures{
+.lectures {
     font-size: 30px;
     font-weight: bold;
     margin-top: 35%;
 }
-.file_icon i{
+
+.file_icon i {
     position: relative;
     top: -35px;
     left: 3%;
@@ -319,10 +376,12 @@ a{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.file_icon:hover{
+
+.file_icon:hover {
     color: rgb(81, 255, 0);
 }
-.file_download_icon{
+
+.file_download_icon {
     position: relative;
     top: -50px;
     left: 55%;
@@ -333,16 +392,20 @@ a{
     height: 0px;
     color: #353535;
 }
-.file_download_icon:hover{
+
+.file_download_icon:hover {
     color: #353535;
 }
-.lectures_course_name{
+
+.lectures_course_name {
     margin: -60px 0px 0px 0px;
 }
-.lectures_title{
+
+.lectures_title {
     margin: 10px 0px 0px 0px;
 }
-.lectures_list{
+
+.lectures_list {
     position: relative;
     left: 1%;
     width: 30%;
@@ -357,23 +420,25 @@ a{
     font-weight: bold;
     float: left;
 }
-.lectures_list:hover{
+
+.lectures_list:hover {
     filter: brightness(95%);
     transition: 0.4s;
 }
 
 /* Mid-exams view Styles */
 
-.mid_exams_title{
+.mid_exams_title {
     margin: 20px 0px 0px 0px;
 }
 
-.mid_exams{
+.mid_exams {
     font-size: 30px;
     font-weight: bold;
     margin-top: 35%;
 }
-.mid_exams_file_icon i{
+
+.mid_exams_file_icon i {
     position: relative;
     top: -35px;
     left: 3%;
@@ -381,10 +446,12 @@ a{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.mid_exams_file_icon:hover{
+
+.mid_exams_file_icon:hover {
     color: rgb(81, 255, 0);
 }
-.mid_exams_file_download_icon{
+
+.mid_exams_file_download_icon {
     position: relative;
     top: -50px;
     left: 55%;
@@ -395,13 +462,16 @@ a{
     height: 0px;
     color: #353535;
 }
-.mid_exams_file_download_icon:hover{
+
+.mid_exams_file_download_icon:hover {
     color: #353535;
 }
-.mid_exams_course_name{
+
+.mid_exams_course_name {
     margin: -60px 0px 0px 0px;
 }
-.mid_exams_list{
+
+.mid_exams_list {
     position: relative;
     left: 1%;
     width: 30%;
@@ -416,7 +486,8 @@ a{
     font-weight: bold;
     float: left;
 }
-.mid_exams_list:hover{
+
+.mid_exams_list:hover {
     filter: brightness(95%);
     transition: 0.4s;
 }
@@ -424,16 +495,17 @@ a{
 
 /* Final-exams view Styles */
 
-.final_exams_title{
+.final_exams_title {
     margin: 20px 0px 0px 0px;
 }
 
-.final_exams{
+.final_exams {
     font-size: 30px;
     font-weight: bold;
     margin-top: 35%;
 }
-.final_exams_file_icon i{
+
+.final_exams_file_icon i {
     position: relative;
     top: -35px;
     left: 3%;
@@ -441,10 +513,12 @@ a{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.final_exams_file_icon:hover{
+
+.final_exams_file_icon:hover {
     color: rgb(81, 255, 0);
 }
-.final_exams_file_download_icon{
+
+.final_exams_file_download_icon {
     position: relative;
     top: -50px;
     left: 55%;
@@ -455,13 +529,16 @@ a{
     height: 0px;
     color: #353535;
 }
-.final_exams_file_download_icon:hover{
+
+.final_exams_file_download_icon:hover {
     color: #353535;
 }
-.final_exams_course_name{
+
+.final_exams_course_name {
     margin: -60px 0px 0px 0px;
 }
-.final_exams_list{
+
+.final_exams_list {
     position: relative;
     left: 1%;
     width: 30%;
@@ -476,7 +553,8 @@ a{
     font-weight: bold;
     float: left;
 }
-.final_exams_list:hover{
+
+.final_exams_list:hover {
     filter: brightness(95%);
     transition: 0.4s;
 }
@@ -485,16 +563,17 @@ a{
 
 /* video_tutorials view Styles */
 
-.video_tutorials_title{
+.video_tutorials_title {
     margin: 20px 0px 0px 0px;
 }
 
-.video_tutorials{
+.video_tutorials {
     font-size: 30px;
     font-weight: bold;
     margin-top: 35%;
 }
-.video_tutorials_file_icon i{
+
+.video_tutorials_file_icon i {
     position: relative;
     top: -35px;
     left: 3%;
@@ -502,10 +581,12 @@ a{
     margin: 0px 0px 0px 0px;
     color: #353535;
 }
-.video_tutorials_file_icon:hover{
+
+.video_tutorials_file_icon:hover {
     color: rgb(81, 255, 0);
 }
-.video_tutorials_file_download_icon{
+
+.video_tutorials_file_download_icon {
     position: relative;
     top: -50px;
     left: 55%;
@@ -516,13 +597,16 @@ a{
     height: 0px;
     color: #353535;
 }
-.video_tutorials_file_download_icon:hover{
+
+.video_tutorials_file_download_icon:hover {
     color: #353535;
 }
-.video_tutorials_course_name{
+
+.video_tutorials_course_name {
     margin: -60px 0px 0px 0px;
 }
-.video_tutorials_list{
+
+.video_tutorials_list {
     position: relative;
     left: 1%;
     width: 30%;
@@ -537,7 +621,8 @@ a{
     font-weight: bold;
     float: left;
 }
-.video_tutorials_list:hover{
+
+.video_tutorials_list:hover {
     filter: brightness(95%);
     transition: 0.4s;
 }
@@ -546,7 +631,7 @@ a{
 
 
 
-footer{
+footer {
     position: relative;
     left: -8px;
     top: 8px;
@@ -557,7 +642,8 @@ footer{
     background-color: #252525;
     font-family: 'Varela Round', sans-serif;
 }
-.top{
+
+.top {
     position: relative;
     left: 15px;
     background-color: rgb(0, 182, 182);
@@ -565,13 +651,15 @@ footer{
     width: 97.4%;
     height: 300px;
 }
-.founded{
+
+.founded {
     position: absolute;
     top: 70px;
     left: 40px;
     color: black;
 }
-.founded .title{
+
+.founded .title {
     position: relative;
     top: 11px;
     background-color: none;
@@ -585,7 +673,8 @@ footer{
     font-size: 11px;
     letter-spacing: 1px;
 }
-.founded .body{
+
+.founded .body {
     position: absolute;
     top: -44px;
     left: 100px;
@@ -599,13 +688,15 @@ footer{
     background-color: none;
     font-size: 55px;
 }
-.top_location{
+
+.top_location {
     position: absolute;
     top: 70px;
     left: 500px;
     color: black;
 }
-.top_location .title{
+
+.top_location .title {
     position: relative;
     top: 11px;
     background-color: none;
@@ -619,7 +710,8 @@ footer{
     font-size: 11px;
     letter-spacing: 1px;
 }
-.top_location .body{
+
+.top_location .body {
     position: absolute;
     top: -44px;
     left: 100px;
@@ -633,12 +725,14 @@ footer{
     border-right: none;
     font-size: 55px;
 }
-.get_intouch{
+
+.get_intouch {
     position: absolute;
     top: 330px;
     left: 6%;
 }
-.get_intouch .title{
+
+.get_intouch .title {
     background-color: none;
     position: relative;
     top: 11px;
@@ -650,19 +744,21 @@ footer{
     font-size: medium;
     letter-spacing: 0;
 }
-.get_intouch .body{
+
+.get_intouch .body {
     position: relative;
     top: 25px;
     text-align: left;
     margin-bottom: -10px;
 }
 
-.connect{
+.connect {
     position: absolute;
     top: 330px;
     left: 42%;
 }
-.connect .title{
+
+.connect .title {
     background-color: none;
     position: relative;
     top: 11px;
@@ -674,7 +770,8 @@ footer{
     font-weight: bold;
     letter-spacing: 0;
 }
-.connect .body{
+
+.connect .body {
     position: relative;
     top: 25px;
     text-align: left;
@@ -682,12 +779,13 @@ footer{
     margin-bottom: -10px;
 }
 
-.detail{
+.detail {
     position: absolute;
     top: 330px;
     left: 70%;
 }
-.detail .title{
+
+.detail .title {
     background-color: none;
     position: relative;
     top: 11px;
@@ -699,7 +797,8 @@ footer{
     font-size: medium;
     letter-spacing: 0;
 }
-.detail .body{
+
+.detail .body {
     position: relative;
     top: 25px;
     text-align: left;
