@@ -46,7 +46,7 @@ window.addEventListener('scroll', () => {
   } else {
     delayTimeout = setTimeout(() => {
       navBar.classList.add('hidden');
-    }, 50);
+    }, 20);
   }
 
   prevScrollPos = currentScrollPos;

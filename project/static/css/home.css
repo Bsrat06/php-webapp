@@ -21,7 +21,7 @@ body {
     left: 0px;
     box-shadow: 0px 0px 5px none;
     z-index: 2;
-    transition: top 0.3s ease;
+    transition: top 0.5s ease;
 }
 
 .nav-bar.hidden {
@@ -43,16 +43,21 @@ body {
     color: aqua;
 }
 
-.nav-bar a:hover {
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-}
-
-#nav-home {
+#nav-home a{
     position: absolute;
     top: 10px;
     left: 27%;
+    height: 39px;
+    background-color: none;
+    border-bottom: 1px solid aqua;
+
 }
+#nav-home a:hover {
+    color: rgb(255, 73, 73);
+    border-bottom: 1px solid rgb(255, 73, 73);
+    transition: 0.4s;
+}
+
 
 #nav-getresources {
     position: absolute;
@@ -75,6 +80,16 @@ body {
     position: absolute;
     top: 10px;
     left: 59%;
+}
+#nav-getresources a, #nav-blog a, #nav-upload a{
+    position: absolute;
+    height: 39px;
+    background-color: none;
+}
+#nav-getresources a:hover, #nav-blog a:hover, #nav-upload a:hover{
+    color: rgb(255, 73, 73);
+    transition: 0.4s;
+    border-bottom: 1px solid rgb(255, 73, 73);
 }
 
 #nav-logout {
@@ -103,13 +118,6 @@ body {
 #nav-logout i:hover {
     color: rgb(255, 112, 112);
     transition: 0.4s;
-}
-
-.nav-bar .account_icon i {
-    position: relative;
-    top: -23px;
-    left: -25px;
-    color: rgba(230, 230, 230, 0.644);
 }
 
 .home-image {
