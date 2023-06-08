@@ -55,7 +55,6 @@ require_once "auth_check.php";
                     if ($_SESSION["user"] == "bsrat@gmail.com") {
                         echo "<div id='nav-upload'><li><a href='upload.php'>UPLOAD</a></li></div>";
                     }
-                    //echo "<div id='nav-logout'><li><a href='http://localhost/astuDigitalResource/project/templates/accounts/logout.php'>LOG OUT</a></li></div>";
                     echo "<div id='nav-logout'><li><a href='accounts/logout.php'><i class='fa-solid fa-power-off'></i></a></li></div>";
                 }
                 ?>
