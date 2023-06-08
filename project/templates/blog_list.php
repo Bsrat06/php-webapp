@@ -63,7 +63,6 @@ require_once("auth_check.php");
             <img class='front_image' src='../images/google-deepmind-4QVqSh4VvP4-unsplash.jpg'>
         </div>
         <div class="container2">
-            <h1 class="title">Latest Posts</h1>
             <?php
             if ($_SESSION["user"] == "bsrat@gmail.com") {
                 "<a class='add_blog' href= 'new_blog_post.php'>Add Blog Post</a><br>";
