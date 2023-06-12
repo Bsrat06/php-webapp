@@ -24,7 +24,7 @@ require_once "auth_check.php";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
     <!-- Rounded font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,18 +80,13 @@ require_once "auth_check.php";
                 <p>This website is designed to help students, teachers, staff members, and anyone who is struggling to
                     find
                     information that is provided by the Adama Science and Technology University.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores repudiandae ratione ipsum
-                    provident.
+                <p>Our website serves as a valuable resource for accessing a wide range of information, helping users navigate through the academic and administrative aspects of ASTU.
                 </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugiat ratione dignissimos, alias
                     ea
                     aliquam totam commodi vero placeat itaque adipisci unde ducimus aliquid non, earum neque optio
                     consectetur repellat.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam aut quasi</p>
-                <p class="about_body2">ipsum dolor sit amet consectetur adipisicing elit. Voluptas numquam aut quasi
-                    excepturi culpa
-                    ducimus quam incidunt, suscipit eveniet id. Voluptas illum vitae nam quis odit dignissimos quam enim
-                    mollitia!</p>
+                <p class="about_body2">With user-friendly navigation, informative content, and regular updates, our website strives to meet the diverse needs of its users, fostering a seamless flow of information and promoting ASTU's commitment to excellence in education, research, and service to society.</p>
             </div>
             <div class="why">
                 <img class="why_image" src="../images/google-deepmind-Krw-2KP7bOE-unsplash.jpg">
@@ -99,19 +94,17 @@ require_once "auth_check.php";
             </div>
             <p class="why_body1">
                 <strong>Reliable</strong><br><i class="fa-solid fa-shield-halved"></i>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
-                suscipit.
+                known for accurate, up-to-date information in various fields, providing valuable resources for knowledge
+                seekers.
             </p>
             <p class="why_body2">
                 <strong>Well Organized</strong><br><i class="fa-solid fa-warehouse"></i>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
-                suscipit.
+                Its user-friendly interface and organized info make it a go-to destination for knowledge seekers
+                across various fields.
             </p>
             <p class="why_body3">
                 <strong>Certified</strong><br><i class="fa-solid fa-certificate"></i>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe doloribus quasi
-                suscipit
-                necessitatibus alias dolorem aut.
+                a certified website, ensuring trust and credibility.<br> With its meticulous organization and accurate information, it is a reliable source for knowledge seekers in various fields.
             </p>
             <div class="products">
                 <img class="products_image" src="../images/google-deepmind-4QVqSh4VvP4-unsplash.jpg">
@@ -180,8 +173,7 @@ require_once "auth_check.php";
                     <p class="recommendations_title">Recommendations</p>
                     <img class="recommendations_image" src="../images/marvin-meyer-SYTO3xs06fU-unsplash (1).jpg"
                         data-tilt data-tilt-glare>
-                    <p class='recommendations_icon'><i
-                            class="fa-solid fa-arrows-split-up-and-left fa-flip-horizontal"></i></p>
+                    <p class='recommendations_icon'><i class="fa-regular fa-lightbulb"></i></p>
                     <p class="recommendations_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
                         quae facilis
                         pariatur? Dolorum voluptatibus alias voluptatem aperiam aut vitae.</p>

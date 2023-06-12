@@ -87,9 +87,6 @@ require_once "auth_check.php";
 
 
             if ($resultCheck > 0) {
-                if ($_SESSION["user"] == "bsrat@gmail.com") {
-                    echo "<div class='upload'><a href='upload_book.php'>Upload  &nbsp<i class='fa-solid fa-plus'></i></a></div>";
-                }
                 echo "<h1 class='books' id='books'>Books</h1>";
 
                 $cssClasses = ['class1', 'class2'];
@@ -204,7 +201,7 @@ require_once "auth_check.php";
                 while ($row = mysqli_fetch_assoc($result)) {
 
                     // to view/download pdf file of the video_tutorials
-                    echo "<div class='video_tutorials_list'><a href='video_tutorials_list.php'>", "<p class='video_tutorials_files'><a href='{$row['url']}'><div class='video_tutorials_file_icon'><i class='fa-brands fa-youtube'></i></div><p class='video_tutorials_file_download_icon'><i class='fa-solid fa-link'></i></p></a></p>", "<p class='video_tutorials_course_name'>Course Name: {$row['course_name']}</p>", "<p class='video_tutorials_title'>Title: {$row['title']}</p></a></div>";
+                    echo "<div class='video_tutorials_list'><a href='video_tutorials_list.php'>", "<p class='video_tutorials_files'><a href='{$row['url']}'><div class='video_tutorials_youtube_icon'><i class='fa-brands fa-youtube'></i></div></a></p>", "<p class='video_tutorials_course_name'>Course Name: {$row['course_name']}</p>", "<p class='video_tutorials_title'>Title: {$row['title']}</p></a></div>";
                 }
 
             } else {

@@ -17,104 +17,86 @@ body{
 }
 
 
-.nav-bar{
-    border: 1px #353535 solid;
-    background-color: #353535;
+.nav-bar {
+    border: 1px black solid;
+    background-color: black;
     width: 100%;
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
-    box-shadow: 0px 0px 5px;
-    position: fixed;
+    box-shadow: 0px 0px 5px none;
     z-index: 2;
-}   
+    transition: top 0.5s ease;
+}
 
- 
-#nav-home{
+.nav-bar.hidden {
+    top: -52px;
+}
+
+#nav-home,
+#nav-getresources,
+#nav-blog,
+#nav-upload {
     list-style: none;
+    background: none;
     font-size: large;
     letter-spacing: 1px;
-    color: black;
-    float: left;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: aqua;
+}
+
+#nav-home a{
     position: absolute;
+    top: 14px;
     left: 27%;
+    background-color: none;
 
 }
-.nav-bar #nav-home a{
-    text-decoration: none;
-    color: white;
-}
-
-#nav-home a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
+#nav-blog a:hover {
     transition: 0.4s;
-
+    color: rgb(255, 73, 73);
+    border-bottom: 2px solid rgb(255, 73, 73);
 }
-#nav-getresources{
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: black;
-    float: left;
+
+
+#nav-getresources a{
     position: absolute;
+    top: 14px;
     left: 37%;
-    
-}
-.nav-bar #nav-getresources a{
-    text-decoration: none;
-    color: white;
-}
-#nav-getresources a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
+    height: 34.5px;
+    background-color: none;
+
 }
 
-#nav-blog{
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: #0c243c;
-    float: left;
+
+#nav-blog a{
     position: absolute;
+    top: 14px;
     left: 50%;
-    
+    height: 34.5px;
+    border-bottom: 2px solid aqua;
 }
 
-.nav-bar #nav-blog a{
-    text-decoration: none;
-    color: white;
-}
-#nav-blog a:hover{
-    /*background-color: rgb(202, 202, 202);*/
-    color: rgb(255, 73, 73);
-    transition: 0.4s;
-}
-
-
-#nav-upload{
-    list-style: none;
-    font-size: large;
-    letter-spacing: 1px;
-    color: #0c243c;
-    float: left;
+#nav-upload a{
     position: absolute;
+    top: 14px;
     left: 59%;
-    
 }
-
-.nav-bar #nav-upload a{
-    text-decoration: none;
-    color: white;
+#nav-home a, #nav-getresources a, #nav-upload a{
+    position: absolute;
+    height: 34.5px;
+    background-color: none;
 }
-#nav-upload a:hover{
-    /*background-color: rgb(202, 202, 202);*/
+#nav-home a:hover, #nav-getresources a:hover, #nav-upload a:hover{
     color: rgb(255, 73, 73);
     transition: 0.4s;
+    border-bottom: 1px solid rgb(255, 73, 73);
 }
-
 #nav-logout {
     position: absolute;
     left: 90%;
@@ -130,7 +112,10 @@ body{
     border-radius: 10px;
 }
 
-.nav-bar #nav-logout i {
+#nav-logout i {
+    position: relative;
+    top: -1px;
+    left: -60px;
     text-decoration: none;
     color: rgb(255, 50, 50);
 }
@@ -140,27 +125,8 @@ body{
     transition: 0.4s;
 }
 
-
-.title{
-    position: relative;
-    top: 80px;
-    text-align: center;
-    margin: 0px 0px 100px 0px;
-}
 a{
     text-decoration: none;
-}
-.add_blog{
-    position: fixed;
-    top: 38px;
-    left: 3.15%;
-    font-size: larger;
-    font-weight: bold;
-    background-color: red;
-    padding: 3px 6px 3px 6px;
-    border-radius: 5px;
-    color: white;
-    z-index:7;
 }
 
 .blog_title{
@@ -168,7 +134,7 @@ a{
     color: #353535;
     font-weight: bold;
     font-size: 30px;
-    padding: 10px 20px 10px 20px;
+    padding: 80px 20px 10px 20px;
 }
 .blog_body{
     color: #353535;

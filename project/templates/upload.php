@@ -52,9 +52,7 @@ if (isset($_POST["submit"])) {
                 if ($_SESSION["user"] == "bsrat@gmail.com") {
                     echo "<div id='nav-upload'><li><a href='upload.php'>UPLOAD</a></li></div>";
                     echo "<div id='nav-logout'><li><a href='accounts/logout.php'><i class='fa-solid fa-power-off'></i></a></li></div>";
-                }
-                
-                    else {
+                } else {
                 }
                 ?>
                 <div id="nav-blog">
@@ -64,10 +62,8 @@ if (isset($_POST["submit"])) {
         </div>
         <h1 class="title">Upload a new document!</h1>
     </div>
-    <p class="new_blog"><a href="new_blog_post.php">New Blog Post</a></p>
-
-
-
-
+    <div class="new">
+        <p class="new_blog"><a href="new_blog_post.php"> New Blog Post &nbsp<i class="fa-solid fa-circle-plus"></i></a></p>
+    </div>
 
 </body>

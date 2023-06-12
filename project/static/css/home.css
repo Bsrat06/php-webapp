@@ -25,7 +25,7 @@ body {
 }
 
 .nav-bar.hidden {
-    top: -50px;
+    top: -52px;
 }
 
 #nav-home,
@@ -225,7 +225,7 @@ body {
     top: 450px;
     left: 150px;
     width: 35%;
-    height: 500px;
+    height: 480px;
     filter: brightness(110%) opacity(80%);
     z-index: -5;
 }
@@ -246,7 +246,7 @@ body {
 
 .about_body {
     position: relative;
-    top: -20px;
+    top: 0px;
     left: 50%;
     text-align: left;
     width: 45%;
@@ -257,6 +257,7 @@ body {
 
 .about_body2 {
     position: relative;
+    top: 50px;
     left: -518px;
     width: 1100px;
     background-color: none;
@@ -264,11 +265,11 @@ body {
 
 .why_image {
     position: relative;
-    left: 0px;
-    right: -8px;
+    left: 0%;    
     width: 100%;
     height: 500px;
     z-index: -1;
+    margin-top: 40px;
 }
 
 .why p {
@@ -282,7 +283,7 @@ body {
     font-weight: 600;
 }
 
-.why_body1 {
+.why_body1{
     position: relative;
     top: -450px;
     left: 110px;
@@ -294,6 +295,7 @@ body {
     border-radius: 5px;
 }
 
+
 .why_body1 strong {
     color: white;
     font-weight: bold;
@@ -303,7 +305,7 @@ body {
 .why_body1 i {
     position: relative;
     top: -45px;
-    left: 250px;
+    left: 200px;
     color: aqua;
     font-size: 50px;
 }
@@ -359,7 +361,7 @@ body {
 
 .why_body3 strong {
     position: relative;
-    left: -70px;
+    left: 0px;
     font-weight: bold;
     font-size: 25px;
 }
@@ -367,7 +369,7 @@ body {
 .why_body3 i {
     position: relative;
     top: -45px;
-    left: 380px;
+    left: 300px;
     color: aqua;
     font-size: 50px;
 }
@@ -407,8 +409,9 @@ body {
     position: relative;
     top: 5px;
     left: 140px;
-    width: 80%;
-    background-color: none;
+    width: 8%;
+    height: 35px;
+    padding: 5px 0 2px 0;
     text-align: left;
     margin: 100px 0px 0px 0px;
     font-family: 'Varela Round', sans-serif;

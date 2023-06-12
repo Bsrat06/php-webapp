@@ -8,11 +8,6 @@ body{
     color: #353535;
     font-family: 'Varela Round', sans-serif;
 }
-.container2{
-    margin: 0% 5% 0% 5%;
-}
-
-
 
 .nav-bar {
     border: 1px black solid;
@@ -28,7 +23,7 @@ body{
 }
 
 .nav-bar.hidden {
-    top: -50px;
+    top: -52px;
 }
 
 #nav-home,
@@ -127,5 +122,27 @@ body{
     position: relative;
     top: 100px;
     text-align: center;
+    color: purple;
     margin: 0px 0px 150px 0px;
+}
+.new_blog a{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: cover;
+    padding: 15px 50% 15px 40%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(84, 179, 84);
+    color: black;
+    text-decoration: none;
+}
+.new_blog i{
+    position: absolute;
+    font-size: larger;
+}
+.new_blog a:hover{
+    background-color: black;
+    color: aqua;
+    transition: 0.4s;
 }
