@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $errorMessage = "Invalid Query!";
         } else {
             $successMessage = "Account Created Successfully!";
-            header("Location: ../home.php");
+            header("Location: ../accounts/login.php");
         }
 
         //close the connection

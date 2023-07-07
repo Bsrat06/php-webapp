@@ -1,12 +1,14 @@
-body{
+body {
     background-color: rgb(235, 235, 235);
     color: #353535;
     font-family: 'Varela Round', sans-serif;
 }
-.container{
+
+.container {
     margin: -20px 10% 0% 10%;
 }
-.container2{
+
+.container2 {
     margin-top: 150px;
 }
 
@@ -35,7 +37,6 @@ body{
     background: none;
     font-size: large;
     letter-spacing: 1px;
-
 }
 
 .nav-bar a {
@@ -43,53 +44,57 @@ body{
     color: aqua;
 }
 
-#nav-home a{
+#nav-home a {
     position: absolute;
     top: 14px;
     left: 27%;
     background-color: none;
-
 }
+
 #nav-blog a:hover {
     transition: 0.4s;
     color: rgb(255, 73, 73);
     border-bottom: 2px solid rgb(255, 73, 73);
 }
 
-
-#nav-getresources a{
+#nav-getresources a {
     position: absolute;
     top: 14px;
     left: 37%;
     height: 34.5px;
     background-color: none;
-
 }
 
-
-#nav-blog a{
+#nav-blog a {
     position: absolute;
     top: 14px;
     left: 50%;
     height: 34.5px;
 }
 
-#nav-upload a{
+#nav-upload a {
     position: absolute;
     top: 14px;
     left: 59%;
     border-bottom: 2px solid aqua;
 }
-#nav-home a, #nav-getresources a, #nav-upload a{
+
+#nav-home a,
+#nav-getresources a,
+#nav-upload a {
     position: absolute;
     height: 34.5px;
     background-color: none;
 }
-#nav-home a:hover, #nav-getresources a:hover, #nav-upload a:hover{
+
+#nav-home a:hover,
+#nav-getresources a:hover,
+#nav-upload a:hover {
     color: rgb(255, 73, 73);
     transition: 0.4s;
     border-bottom: 1px solid rgb(255, 73, 73);
 }
+
 #nav-logout {
     position: absolute;
     left: 90%;
@@ -118,8 +123,7 @@ body{
     transition: 0.4s;
 }
 
-
-.title{
+.title {
     position: relative;
     top: -30px;
     margin: 0px 0px 0px 0px;
@@ -127,7 +131,8 @@ body{
     font-size: 26px;
     font-weight: bold;
 }
-.add_blog{
+
+.add_blog {
     position: fixed;
     top: 38px;
     left: 3.15%;
@@ -137,12 +142,50 @@ body{
     padding: 3px 6px 3px 6px;
     border-radius: 5px;
     color: white;
-    z-index:7;
+    z-index: 7;
 }
-form input{
+
+form input {
     padding: 10px 10px;
+    border: 1px solid purple;
+    background-color: rgba(153, 255, 153, 0.342);
+    border-radius: 8px;
 }
-#textarea{
+
+#textarea {
     width: 400px;
     height: 250px;
+}
+
+.btn-publish {
+    background-color: lawngreen;
+    border-radius: 5px;
+    border: 1px solid none;
+    color: purple;
+    padding: 2px 3px;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: -20px 5% 0% 5%;
+    }
+    
+    .add_blog {
+        top: 58px;
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: -20px 3% 0% 3%;
+    }
+    
+    .add_blog {
+        top: 78px;
+        left: 5%;
+    }
 }

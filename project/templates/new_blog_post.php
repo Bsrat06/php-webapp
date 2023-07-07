@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action="" method="POST">
                 <p><input type="text" name="title" placeholder="Title" required></p>
                 <p><input id="textarea" type="textarea" name="body" placeholder="body" required></p>
-                <p>Cover Image: <input type="file" name="image" required></p>
+                <p>Cover Image<input type="file" name="image" optional></p>
                 <button class="btn-publish" type="submit" name="submit">PUBLISH</button>
             </form>
         </div>

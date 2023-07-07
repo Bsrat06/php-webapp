@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
             <ul>
                 <div id="nav-home"><li><a href="../home.php">HOME</a></li></div>
                 <div id="nav-getresources"><li><a href="http://localhost/astuDigitalResource/project/templates/getresources.php">GET RESOURCES</a></li></div>
-                <div id="nav-blog"><li><a href="#">BLOG</a></li></div>
+                <div id="nav-blog"><li><a href="../blog_list.php">BLOG</a></li></div>
             </ul>
         </div>
         <div class="container2">
@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
                 <form action="http://localhost/astuDigitalResource/project/templates/accounts/login.php" method="POST">
                     <p class="email">Email<input type="email" name="email" required><i class="fa-solid fa-envelope"></i></p>
                     <p class="password">Password<input type="password" name="password" required><i class="fa-solid fa-lock"></i></p>
-                    <a class="forgot" href="#"><p>forgot password?</p></a>
+                    <!-- <a class="forgot" href="#"><p>forgot password?</p></a> -->
                     <div class= "successMessage">
                         <?php
                         if (!empty($successMessage)){
